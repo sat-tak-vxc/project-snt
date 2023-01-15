@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>車庫証明ガイダンス</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;&lt;u&gt;１.契約セクションに引き継ぎ&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;・Chatterで契約セクションに担当が変わった旨を通知する。&lt;/p&gt;&lt;p&gt;・「担当チーム」項目を契約セクションのセクションレコードに変更する。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;2．過去案件検索&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;・自身が担当となっている車庫証明書のリストビューから該当レコードを確認する。&lt;/p&gt;&lt;p&gt;(リストビューは&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「未完了の車庫証明」をコピー&lt;/li&gt;&lt;li&gt;「リスト名」「&lt;span style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;リスト API 参照名」を任意に設定。&lt;/span&gt;「誰がこのリストビューを表示しますか?」を「&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;自分のみがこのリストビューを表示できる&lt;/span&gt;」に選択し作成&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;で作成したリストビューを利用)&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;3．請求内容確認&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;・「関連」タブを開き、「ファイル」関連リストに請求書をアップロードする。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;4．対象案件レポート出力&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;・対応対象の車庫証明レコードを抽出したレポートを作成し、Excel/CSV形式で出力する。&lt;/p&gt;&lt;p&gt;※出力した&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;Excel/CSVファイルを(必要に応じ)加工してフォーマットに貼付け、送付用書類として成型する。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;(レポート出力方法&lt;/p&gt;&lt;ol&gt;&lt;li&gt;車庫証明_(対象名)/&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;車庫証明_(対象名)(時間指定)レポートを開く（時間指定の場合、検索条件で「作成日」「作成時間」から詳細な検索条件を指定できます。)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;右上のプルダウンメニューから「エクスポート」&lt;/span&gt;を選択&lt;/li&gt;&lt;li&gt;「エクスポートビュー」「形式」を選択してエクスポートを選択&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;)&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>車庫証明業務</header>
+        <isPublished>true</isPublished>
+        <masterLabel>車庫証明ガイダンス</masterLabel>
+        <publishedDate>2022-07-05</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2022-07-05</startDate>
+        <targetPageKey1>GarageCertification__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>車庫証明業務手順</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

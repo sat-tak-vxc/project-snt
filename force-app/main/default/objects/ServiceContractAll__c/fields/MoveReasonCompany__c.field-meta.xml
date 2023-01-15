@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MoveReasonCompany__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>会社都合となる転居理由を、カンマ区切りで入力します。</inlineHelpText>
+    <label>会社都合転居理由</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

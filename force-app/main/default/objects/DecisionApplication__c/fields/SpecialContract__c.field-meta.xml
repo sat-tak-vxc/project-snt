@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SpecialContract__c</fullName>
+    <externalId>false</externalId>
+    <label>契約上取扱特約</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>入居者変更可能</fullName>
+                <default>false</default>
+                <label>入居者変更可能</label>
+            </value>
+            <value>
+                <fullName>入居者変更不可</fullName>
+                <default>false</default>
+                <label>入居者変更不可</label>
+            </value>
+            <value>
+                <fullName>条件付</fullName>
+                <default>false</default>
+                <label>条件付</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

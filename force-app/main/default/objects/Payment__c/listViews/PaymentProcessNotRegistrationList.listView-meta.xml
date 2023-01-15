@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentProcessNotRegistrationList</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>BankAccount__c</columns>
+    <columns>TotalAmount__c</columns>
+    <columns>RemittanceDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProcessManagement__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>IsIndividualRefund__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RemittanceDate__c</field>
+        <operation>lessOrEqual</operation>
+    </filters>
+    <label>支払工程未登録リスト</label>
+</ListView>

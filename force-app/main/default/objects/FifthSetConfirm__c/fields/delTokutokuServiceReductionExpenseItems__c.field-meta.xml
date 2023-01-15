@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>delTokutokuServiceReductionExpenseItems__c</fullName>
+    <externalId>false</externalId>
+    <label>（不要）得々サービス減額費目</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>フリーレント</fullName>
+                <default>false</default>
+                <label>フリーレント</label>
+            </value>
+            <value>
+                <fullName>礼金</fullName>
+                <default>false</default>
+                <label>礼金</label>
+            </value>
+            <value>
+                <fullName>仲介手数料</fullName>
+                <default>false</default>
+                <label>仲介手数料</label>
+            </value>
+            <value>
+                <fullName>敷引/償却</fullName>
+                <default>false</default>
+                <label>敷引/償却</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

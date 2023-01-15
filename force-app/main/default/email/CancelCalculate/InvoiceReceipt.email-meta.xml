@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>請求書受領済み</name>
+    <style>none</style>
+    <subject>精算合意及び精算金送金のご案内/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

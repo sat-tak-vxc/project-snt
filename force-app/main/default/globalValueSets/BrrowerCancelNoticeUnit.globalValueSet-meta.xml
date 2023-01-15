@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>日</fullName>
+        <default>false</default>
+        <label>日</label>
+    </customValue>
+    <customValue>
+        <fullName>週</fullName>
+        <default>false</default>
+        <label>週</label>
+    </customValue>
+    <customValue>
+        <fullName>月</fullName>
+        <default>false</default>
+        <label>月</label>
+    </customValue>
+    <masterLabel>借主解約予告_単位</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

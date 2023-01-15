@@ -1,0 +1,23 @@
+{!Renewal.RenewalCounterName__c}
+{!Renewal.RenewalCounterStaffLastName__c} 様
+
+いつもお世話になっております。
+日本社宅サービス（株）でございます。
+
+先日、ご依頼いたしました確認書類のご送付ですが、
+下記期日までにご送付いただくことは可能でしょうか。
+
+■借主企業名：{!Renewal.AccountName__c}
+■物件（駐車場）名：{!Renewal.RealEstateName__c}
+■部屋（区画）番号：{!Renewal.RoomNum__c}
+■住所：{!Renewal.RealEstateAdress__c}
+■契約期間満了日：{!Renewal.ContractEndDate__c}
+
+＜返送期日＞
+{!Renewal.NextConfirmationCollectScheduleDate__c}
+
+期日までのご返送が難しい場合は、お手数ですが弊社へご一報いただけますでしょうか。
+    
+お忙しい中恐れ入りますが、何卒よろしくお願い申し上げます。
+
+{!Renewal.Signature__c}

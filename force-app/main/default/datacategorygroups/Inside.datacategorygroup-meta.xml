@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>社内ナレッジ</label>
+            <name>InsideKnowledge</name>
+        </dataCategory>
+        <dataCategory>
+            <label>社内ニュース</label>
+            <name>InsideNews</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FAQ</label>
+            <name>FAQ</name>
+        </dataCategory>
+        <label>すべて</label>
+        <name>All</name>
+    </dataCategory>
+    <label>社内向け</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

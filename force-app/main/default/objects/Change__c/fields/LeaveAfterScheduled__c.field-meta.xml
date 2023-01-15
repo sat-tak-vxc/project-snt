@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeaveAfterScheduled__c</fullName>
+    <externalId>false</externalId>
+    <label>退去後の予定</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>新入居者予定有り</fullName>
+                <default>false</default>
+                <label>新入居者予定有り</label>
+            </value>
+            <value>
+                <fullName>空室で保留</fullName>
+                <default>false</default>
+                <label>空室で保留</label>
+            </value>
+            <value>
+                <fullName>未定</fullName>
+                <default>false</default>
+                <label>未定</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

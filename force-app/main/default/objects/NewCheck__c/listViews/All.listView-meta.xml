@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>OperatorCheck__c</columns>
+    <columns>CheckFieldsName__c</columns>
+    <columns>CheckFieldsValue__c</columns>
+    <columns>NewMatter__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

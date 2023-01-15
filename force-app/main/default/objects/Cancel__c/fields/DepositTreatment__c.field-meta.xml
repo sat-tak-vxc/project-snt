@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DepositTreatment__c</fullName>
+    <externalId>false</externalId>
+    <label>敷金扱い</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>預け替え</fullName>
+                <default>false</default>
+                <label>預け替え</label>
+            </value>
+            <value>
+                <fullName>スライド</fullName>
+                <default>false</default>
+                <label>スライド</label>
+            </value>
+            <value>
+                <fullName>敷金無し</fullName>
+                <default>false</default>
+                <label>敷金無し</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

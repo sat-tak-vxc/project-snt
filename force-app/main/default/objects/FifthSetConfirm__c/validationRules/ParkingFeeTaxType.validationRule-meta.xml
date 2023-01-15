@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParkingFeeTaxType</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL(  ParkingFee__c  )) , ISBLANK( TEXT(  delParkingFeeTaxType__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>delParkingFeeTaxType__c</errorDisplayField>
+    <errorMessage>駐車場_税区分を入力してください</errorMessage>
+</ValidationRule>

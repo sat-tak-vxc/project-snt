@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ButtonVacancyRealEstateSearch</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>（不要）空室物件検索</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://d5h0000029fh5eae--vxcdev02.lightning.force.com/lightning/r/Report/00OO0000000tEeVMAU/view?fv1={!Change__c.ResidentBelongsAccount__c}</url>
+</WebLink>

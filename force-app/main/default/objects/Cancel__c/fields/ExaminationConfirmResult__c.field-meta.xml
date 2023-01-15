@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExaminationConfirmResult__c</fullName>
+    <externalId>false</externalId>
+    <label>審査確認結果</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>名変可</fullName>
+                <default>false</default>
+                <label>名変可</label>
+            </value>
+            <value>
+                <fullName>名変不可</fullName>
+                <default>false</default>
+                <label>名変不可</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

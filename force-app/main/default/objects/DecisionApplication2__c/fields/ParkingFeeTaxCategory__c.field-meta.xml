@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ParkingFeeTaxCategory__c</fullName>
+    <description>翌月以降駐車場代税区分が割り当てられる（車庫証明）</description>
+    <externalId>false</externalId>
+    <label>駐車場代税区分</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>TaxClass</valueSetName>
+    </valueSet>
+</CustomField>

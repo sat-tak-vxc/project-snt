@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Penalty1TaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( Penalty1__c )) , ISBLANK( TEXT( Penalty1TaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>Penalty1TaxCategory__c</errorDisplayField>
+    <errorMessage>違約金1_税区分を入力してください</errorMessage>
+</ValidationRule>

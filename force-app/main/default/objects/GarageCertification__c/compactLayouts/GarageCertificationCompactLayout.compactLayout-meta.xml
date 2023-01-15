@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GarageCertificationCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>RealEstateId__c</fields>
+    <fields>RealEstateName__c</fields>
+    <fields>RoomNum__c</fields>
+    <fields>TransactionDestinationName__c</fields>
+    <label>車庫証明</label>
+</CompactLayout>

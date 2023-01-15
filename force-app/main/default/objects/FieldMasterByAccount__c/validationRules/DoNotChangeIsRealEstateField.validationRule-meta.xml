@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoNotChangeIsRealEstateField</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   NOT( ISNEW() ),
+   ISCHANGED(  IsRealEstateField__c  )
+)</errorConditionFormula>
+    <errorDisplayField>IsRealEstateField__c</errorDisplayField>
+    <errorMessage>物件は変更できません。新しくレコードを作成してください。</errorMessage>
+</ValidationRule>

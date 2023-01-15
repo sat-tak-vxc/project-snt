@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>不動産会社の見積作成が遅い場合に見積作成を催促</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>見積督促(解約業務)</name>
+    <style>none</style>
+    <subject>解約精算における見積書ご提出について/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

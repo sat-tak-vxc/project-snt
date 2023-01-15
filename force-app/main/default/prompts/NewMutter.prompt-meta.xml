@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>新規</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;&lt;u&gt;1.引越し業者へ連絡する&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右側のメールタブから、メール送信画面を起動する。&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;メールテンプレートを選択し、引越し業者へメール送信する。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;2.斡旋依頼の確認/送付&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;斡旋依頼タブをクリックする&lt;/li&gt;&lt;li&gt;自動斡旋状況を確認する&lt;/li&gt;&lt;li&gt;斡旋依頼を手動で追加する場合、検索ウィンドウから不動産会社を検索し、「登録」をクリックする。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;3.決定物件連絡状況の確認&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;決定情報タブをクリックする&lt;/li&gt;&lt;li&gt;不動産会社、社員の決定連絡状況、内容を確認する。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>業務手順</header>
+        <isPublished>true</isPublished>
+        <masterLabel>新規</masterLabel>
+        <publishedDate>2022-08-30</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-09</startDate>
+        <targetPageKey1>NewMatter__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>30</timesToDisplay>
+        <title>新規業務の進め方</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

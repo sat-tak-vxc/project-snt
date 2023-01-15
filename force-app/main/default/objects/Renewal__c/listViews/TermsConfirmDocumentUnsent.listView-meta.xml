@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TermsConfirmDocumentUnsent</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>Account__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>RenewalCounter__c</columns>
+    <columns>RenewalCounterCharge__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TermsConfirmDocumentSendDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>条件確認書未送付</label>
+</ListView>

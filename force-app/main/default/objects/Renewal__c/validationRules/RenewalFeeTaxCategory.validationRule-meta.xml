@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalFeeTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( RenewalFee__c )) , ISBLANK( TEXT( RenewalFeeTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>RenewalFeeTaxCategory__c</errorDisplayField>
+    <errorMessage>更新料税区分を入力してください</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OK</fullName>
+        <default>false</default>
+        <label>OK</label>
+    </customValue>
+    <customValue>
+        <fullName>NG</fullName>
+        <default>false</default>
+        <label>NG</label>
+    </customValue>
+    <masterLabel>ご確認書チェックマスタ</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalProcessMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>更新手続方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>書類作成のみ</fullName>
+                <default>false</default>
+                <label>書類作成のみ</label>
+            </value>
+            <value>
+                <fullName>更新費用発生</fullName>
+                <default>false</default>
+                <label>更新費用発生</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

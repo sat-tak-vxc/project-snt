@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>保管書類督促（初回分）</name>
+    <style>none</style>
+    <subject>捺印書類（借主控え）ご送付のお願い/日本社宅サービス(株)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

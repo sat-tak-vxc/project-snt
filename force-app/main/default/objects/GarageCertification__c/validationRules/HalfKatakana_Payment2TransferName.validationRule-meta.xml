@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HalfKatakana_Payment2TransferName</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF ( ISBLANK (  Payment2TransferContractor__c  ), FALSE, NOT ( REGEX ( Payment2TransferContractor__c  , &quot;^[ｦ-ﾟ]*$&quot; ) ) )</errorConditionFormula>
+    <errorDisplayField>Payment2TransferContractor__c</errorDisplayField>
+    <errorMessage>半角カタカナで入力してください</errorMessage>
+</ValidationRule>

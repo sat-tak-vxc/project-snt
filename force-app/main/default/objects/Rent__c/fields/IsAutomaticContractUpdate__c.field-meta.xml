@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsAutomaticContractUpdate__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+    ContractEndDate__c &lt;TODAY() ,
+    IsAutomaticUpdateProcessed__c = FALSE,
+    ISPICKVAL(RealEstateName__r.RenewalCategory__c,&apos;自動更新&apos;),
+     RealEstateName__r.IsNonAutomaticUpdate__c = FALSE
+    )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>自動契約更新フラグ</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

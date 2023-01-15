@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CorporateHousingRegulation__c</columns>
+    <columns>DistrictMaster__c</columns>
+    <columns>TitleMaster__c</columns>
+    <columns>RelocationShapeMaster__c</columns>
+    <columns>UpperLimitRent__c</columns>
+    <columns>AreaUpperLimit__c</columns>
+    <columns>FloorPlanRegulation1__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

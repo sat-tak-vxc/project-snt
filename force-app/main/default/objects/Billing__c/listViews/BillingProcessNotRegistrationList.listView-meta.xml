@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingProcessNotRegistrationList</fullName>
+    <columns>NAME</columns>
+    <columns>BillingDestinationName__c</columns>
+    <columns>TargetYearMonth__c</columns>
+    <columns>BillNo__c</columns>
+    <columns>BillingAmountTotal__c</columns>
+    <columns>OperationCategory__c</columns>
+    <columns>SendScheduledDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProcessManagement__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>TargetYearMonth__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>請求工程未登録リスト</label>
+</ListView>

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>assgin_HolidayNoRecurrence</name>
+        <label>休日フラグ割り当て</label>
+        <locationX>1051</locationX>
+        <locationY>382</locationY>
+        <assignmentItems>
+            <assignToReference>var_IsHoliday</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loop_NoRecurrence</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>assgin_HolidayRecursWeekly</name>
+        <label>休日フラグ割り当て</label>
+        <locationX>1044</locationX>
+        <locationY>706</locationY>
+        <assignmentItems>
+            <assignToReference>var_IsHoliday</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loop_RecursWeekly</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>assgin_HolidayRecursWeekly_0</name>
+        <label>休日フラグ割り当て</label>
+        <locationX>1040</locationX>
+        <locationY>1012</locationY>
+        <assignmentItems>
+            <assignToReference>var_IsHoliday</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loop_RecursYearly</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>assgin_HolidayRecursYearlyNth</name>
+        <label>休日フラグ割り当て</label>
+        <locationX>1072</locationX>
+        <locationY>1332</locationY>
+        <assignmentItems>
+            <assignToReference>var_IsHoliday</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loop_RecursYearlyNth</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <name>filter_NoRecurrence</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>繰返し休日ではない休日検索</label>
+        <locationX>881</locationX>
+        <locationY>190</locationY>
+        <assignNextValueToReference>currentItem_filter_RecursYearlyNth</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>varCol_Holidays</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.IsRecurrence</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <booleanValue>false</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>loop_NoRecurrence</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <name>filter_RecursWeekly</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>毎週繰り返し休日検索</label>
+        <locationX>879</locationX>
+        <locationY>472</locationY>
+        <assignNextValueToReference>currentItem_filter_RecursYearlyNth</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>varCol_Holidays</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.RecurrenceType</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <stringValue>RecursWeekly</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.IsRecurrence</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <booleanValue>true</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>loop_RecursWeekly</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <name>filter_RecursYearly</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>毎年繰り返し休日検索</label>
+        <locationX>876</locationX>
+        <locationY>774</locationY>
+        <assignNextValueToReference>currentItem_filter_RecursYearlyNth</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>varCol_Holidays</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.RecurrenceType</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <stringValue>RecursYearly</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.IsRecurrence</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <booleanValue>true</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>loop_RecursYearly</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <name>filter_RecursYearlyNth</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>毎年繰り返しN日休日検索</label>
+        <locationX>877</locationX>
+        <locationY>1095</locationY>
+        <assignNextValueToReference>currentItem_filter_RecursYearlyNth</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>varCol_Holidays</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.RecurrenceType</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <stringValue>RecursYearlyNth</stringValue>
+            </rightValue>
+        </conditions>
+        <conditions>
+            <leftValueReference>currentItem_filter_RecursYearlyNth.IsRecurrence</leftValueReference>
+            <operator>EqualTo</operator>
+            <rightValue>
+                <booleanValue>true</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>loop_RecursYearlyNth</targetReference>
+        </connector>
+    </collectionProcessors>
+    <decisions>
+        <name>decision_HolidayNoRecurrence</name>
+        <label>休日判定</label>
+        <locationX>1042</locationX>
+        <locationY>258</locationY>
+        <defaultConnector>
+            <targetReference>loop_NoRecurrence</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>HolidayNoRecurrence</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loop_NoRecurrence.ActivityDate</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>var_InputDate</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assgin_HolidayNoRecurrence</targetReference>
+            </connector>
+            <label>休日</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decision_HolidayNoRecursWeekly</name>
+        <label>休日判定</label>
+        <locationX>1038</locationX>
+        <locationY>566</locationY>
+        <defaultConnector>
+            <targetReference>loop_RecursWeekly</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>HolidayNoRecursWeekly</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loop_RecursWeekly.RecurrenceDayOfWeekMask</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecursWeekly</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assgin_HolidayRecursWeekly</targetReference>
+            </connector>
+            <label>休日</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decision_HolidayRecursYearly</name>
+        <label>休日判定</label>
+        <locationX>1025</locationX>
+        <locationY>869</locationY>
+        <defaultConnector>
+            <targetReference>loop_RecursYearly</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>HolidayRecursYearly</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loop_RecursYearly.RecurrenceMonthOfYear</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecurrenceMonthOfYear</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>loop_RecursYearly.RecurrenceDayOfMonth</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecurrenceDayOfMonth</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assgin_HolidayRecursWeekly_0</targetReference>
+            </connector>
+            <label>休日</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decision_HolidayRecursYearlyNth</name>
+        <label>休日判定</label>
+        <locationX>1061</locationX>
+        <locationY>1173</locationY>
+        <defaultConnector>
+            <targetReference>loop_RecursYearlyNth</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
+        <rules>
+            <name>HolidayRecursYearlyNth</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>loop_RecursYearlyNth.RecurrenceMonthOfYear</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecurrenceMonthOfYear</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>loop_RecursYearlyNth.RecurrenceDayOfWeekMask</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecursWeekly</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>loop_RecursYearlyNth.RecurrenceInstance</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>formula_RecurrenceInstance</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>assgin_HolidayRecursYearlyNth</targetReference>
+            </connector>
+            <label>休日</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_FirstDate</name>
+        <dataType>Number</dataType>
+        <expression>CASE(
+  MOD( DATE ( YEAR ( {!var_InputDate}), MONTH(  {!var_InputDate}), 1) - DATE( 1900, 1, 7 ), 7 ),
+  0, 1,
+  1, 2,
+  2, 4,
+  3, 8,
+  4, 16,
+  5, 32, 
+  64
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>formula_RecurrenceDayOfMonth</name>
+        <dataType>Number</dataType>
+        <expression>DAY( {!var_InputDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>formula_RecurrenceInstance</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  {!formula_FirstDate},
+  0, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 7),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 14),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 21),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 28),1,2),&quot;Fourth&quot;,
+          &quot;Last&quot;),
+  1, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 6),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 13),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 20),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 27),1,2),&quot;Fourth&quot;,
+          &quot;Last&quot;),
+  2, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 5),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 12),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 19),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 26),1,2),&quot;Fourth&quot;,
+          &quot;Last&quot;),
+  3, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 4),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 11),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 18),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 25),1,2),&quot;Fourth&quot;,
+          &quot;Last&quot;),
+  4, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 3),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 10),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 17),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 24),1,2),&quot;Fourth&quot;,
+          &quot;Last&quot;),
+  5, CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 2),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 9),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 16),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 23),1,2),&quot;Fourth&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 24,DAY({!var_InputDate})&lt;= 30),1,2),&quot;Fifth&quot;,
+          &quot;Last&quot;),
+  CASE(1,
+          IF(AND(DAY({!var_InputDate})&gt;= 1,DAY({!var_InputDate})&lt;= 1),1,2),&quot;First&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 8,DAY({!var_InputDate})&lt;= 8),1,2),&quot;Second&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 15,DAY({!var_InputDate})&lt;= 15),1,2),&quot;Third&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 22,DAY({!var_InputDate})&lt;= 22),1,2),&quot;Fourth&quot;,
+          IF(AND(DAY({!var_InputDate})&gt;= 24,DAY({!var_InputDate})&lt;= 30),1,2),&quot;Fifth&quot;,
+          &quot;Last&quot;)
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formula_RecurrenceMonthOfYear</name>
+        <dataType>String</dataType>
+        <expression>CASE(
+  MONTH( {!var_InputDate}),
+  1, &quot;January&quot;,
+  2, &quot;February&quot;,
+  3, &quot;March&quot;,
+  4, &quot;April&quot;,
+  5, &quot;May&quot;,
+  6, &quot;June&quot;,
+  7, &quot;July&quot;,
+  8, &quot;August&quot;,
+  9, &quot;September&quot;,
+  10, &quot;October&quot;,
+  11, &quot;November&quot;,
+  &quot;December&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formula_RecursWeekly</name>
+        <dataType>Number</dataType>
+        <expression>CASE(
+  MOD( {!var_InputDate}- DATE( 1900, 1, 7 ), 7 ),
+  0, 1,
+  1, 2,
+  2, 4,
+  3, 8,
+  4, 16,
+  5, 32, 
+  64
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>休日判定 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>HO_休日判定</label>
+    <loops>
+        <name>loop_NoRecurrence</name>
+        <label>繰り返しなし休日ループ</label>
+        <locationX>879</locationX>
+        <locationY>318</locationY>
+        <collectionReference>filter_NoRecurrence</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>decision_HolidayNoRecurrence</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>filter_RecursWeekly</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>loop_RecursWeekly</name>
+        <label>毎週繰り返し休日ループ</label>
+        <locationX>880</locationX>
+        <locationY>616</locationY>
+        <collectionReference>filter_RecursWeekly</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>decision_HolidayNoRecursWeekly</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>filter_RecursYearly</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>loop_RecursYearly</name>
+        <label>毎年繰り返し休日ループ</label>
+        <locationX>876</locationX>
+        <locationY>953</locationY>
+        <collectionReference>filter_RecursYearly</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>decision_HolidayRecursYearly</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>filter_RecursYearlyNth</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <loops>
+        <name>loop_RecursYearlyNth</name>
+        <label>毎年繰り返しN日休日ループ</label>
+        <locationX>873</locationX>
+        <locationY>1228</locationY>
+        <collectionReference>filter_RecursYearlyNth</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>decision_HolidayRecursYearlyNth</targetReference>
+        </nextValueConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>756</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>filter_NoRecurrence</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>currentItem_filter_RecursYearlyNth</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Holiday</objectType>
+    </variables>
+    <variables>
+        <name>var_InputDate</name>
+        <dataType>Date</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>var_IsHoliday</name>
+        <dataType>Boolean</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varCol_Holidays</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Holiday</objectType>
+    </variables>
+</Flow>

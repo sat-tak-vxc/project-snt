@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CleanRepairCostTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( CleaRepairCost__c  )) , ISBLANK( TEXT(  CleanRepairCostTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>CleanRepairCostTaxCategory__c</errorDisplayField>
+    <errorMessage>清掃・修繕費用税区分を入力してください</errorMessage>
+</ValidationRule>

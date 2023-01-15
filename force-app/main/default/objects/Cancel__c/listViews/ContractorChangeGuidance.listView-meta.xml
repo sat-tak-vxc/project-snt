@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContractorChangeGuidance</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>IsContractorChangeGuidance__c</columns>
+    <columns>ContractorChangeGuidanceDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cancel__c.ContractorChange</value>
+    </filters>
+    <filters>
+        <field>IsContractorChangeGuidance__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>名変手続き中</value>
+    </filters>
+    <label>名変案内対象案件</label>
+</ListView>

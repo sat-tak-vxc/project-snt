@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>条件変更</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;&lt;u&gt;1.条件変更レコードの作成方法&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;物件レコード上で「条件変更業務開始」をクリックする。&lt;/li&gt;&lt;li&gt;ケースレコード上で「条件変更作成」をクリックする。（ケースレコードに物件が登録されていることを確認してください。）&lt;/li&gt;&lt;li&gt;物件のリストビューより、該当物件を複数選択し、「一括条件変更業務開始」をクリックする。（一括で条件変更の業務を開始することができます。）&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;2.変更条件を入力する&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「詳細」タブを開き、変更後の条件を入力する。（デフォルトでは、変更前の条件が入力されています。）&lt;/li&gt;&lt;li&gt;家主やそれに紐づく取引先の情報が登録されていない場合は、入力したい項目をクリックし、「新規家主」「新規取引先」をクリックし、マスタ登録を行ってください。（家主は決裁申請取得時に自動的に物件と紐づきます。）&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;3.業務チェックと再査チェック&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;目視チェックが必要な項目は「条件変更チェック」タブにある”条件変更チェック”リストの「New」より登録する。&lt;/li&gt;&lt;li&gt;チェックを行う際は、”条件変更チェック”リストより編集ボタンをクリックし、内容を更新する。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>条件変更業務</header>
+        <isPublished>true</isPublished>
+        <masterLabel>条件変更</masterLabel>
+        <publishedDate>2022-07-04</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-07-04</startDate>
+        <targetPageKey1>ConditionChange__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>30</timesToDisplay>
+        <title>条件変更業務手順</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

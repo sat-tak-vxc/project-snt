@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RealEstateManagerConpactLayout</fullName>
+    <fields>AccountId</fields>
+    <fields>RecordTypeId</fields>
+    <fields>EmployeeNum__c</fields>
+    <fields>Email</fields>
+    <fields>Phone</fields>
+    <fields>MobilePhone</fields>
+    <fields>WorkDestinationFax__c</fields>
+    <label>不動産管理会社コンパクトレイアウト</label>
+</CompactLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>ユーザがトレーニングに不参加</fullName>
+        <default>false</default>
+        <label>ユーザがトレーニングに不参加</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>複合機能</fullName>
+        <default>false</default>
+        <label>複合機能</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>既存の問題</fullName>
+        <default>false</default>
+        <label>既存の問題</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>指示が不明瞭</fullName>
+        <default>false</default>
+        <label>指示が不明瞭</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>新規の問題</fullName>
+        <default>false</default>
+        <label>新規の問題</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>User didn&apos;t attend training</fullName>
+        <default>false</default>
+        <label>User</label>
+        <cssExposed>false</cssExposed>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Complex functionality</fullName>
+        <default>false</default>
+        <label>Complex</label>
+        <cssExposed>false</cssExposed>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Existing problem</fullName>
+        <default>false</default>
+        <label>Existing</label>
+        <cssExposed>false</cssExposed>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Instructions not clear</fullName>
+        <default>false</default>
+        <label>Instructions</label>
+        <cssExposed>false</cssExposed>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>New problem</fullName>
+        <default>false</default>
+        <label>New</label>
+        <cssExposed>false</cssExposed>
+        <isActive>false</isActive>
+    </standardValue>
+</StandardValueSet>

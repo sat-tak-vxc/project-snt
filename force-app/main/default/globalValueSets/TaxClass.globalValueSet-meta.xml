@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ex10</fullName>
+        <default>false</default>
+        <label>外税10％</label>
+    </customValue>
+    <customValue>
+        <fullName>Ex8</fullName>
+        <default>false</default>
+        <label>外税8％</label>
+    </customValue>
+    <customValue>
+        <fullName>In10</fullName>
+        <default>false</default>
+        <label>内税10％</label>
+    </customValue>
+    <customValue>
+        <fullName>In8</fullName>
+        <default>false</default>
+        <label>内税8％</label>
+    </customValue>
+    <customValue>
+        <fullName>Exempt</fullName>
+        <default>false</default>
+        <label>非課税</label>
+    </customValue>
+    <masterLabel>税区分</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

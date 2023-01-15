@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>支払区分</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>敷金精算</fullName>
+                <default>false</default>
+                <label>敷金精算</label>
+            </value>
+            <value>
+                <fullName>退去精算</fullName>
+                <default>false</default>
+                <label>退去精算</label>
+            </value>
+            <value>
+                <fullName>通常家賃支払</fullName>
+                <default>false</default>
+                <label>通常家賃支払</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

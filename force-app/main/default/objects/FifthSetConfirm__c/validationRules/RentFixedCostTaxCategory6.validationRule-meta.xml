@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RentFixedCostTaxCategory6</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( RentFixedCostAmount6__c )) , ISBLANK( TEXT( RentFixedCostTaxCategory6__c ) ) )</errorConditionFormula>
+    <errorDisplayField>RentFixedCostTaxCategory6__c</errorDisplayField>
+    <errorMessage>月額固定費6_税区分を入力してください</errorMessage>
+</ValidationRule>

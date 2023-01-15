@@ -1,0 +1,27 @@
+{!CancelCalculate.CalculateCounterName__c}
+{!CancelCalculate.CalculateCounterStaffLastName__c} 様
+
+いつもお世話になっております。
+日本社宅サービス(株)でございます。
+
+下記物件（駐車場）の賃貸借契約の解約に伴う敷金精算につきまして、
+賃借人の合意が得られましたので、ご連絡申し上げます。
+精算金の返還につきましては、賃借人の指定する下記口座へお振込をお願い申し上げます。
+
+なお、下記「返金合計額」に相違がある場合や、振込名義が貴社または家主様以外の場合には、
+お手数ですが、弊社までご連絡いただけますと幸いです。
+
+■対象物件（駐車場）：{!CancelCalculate.RealEstateName__c}
+■号室（区画番号）：{!CancelCalculate.RoomName__c}
+■返金合計額：{!CancelCalculate.CalculateConfirmationRefundTotal__c} 円
+■返金希望日：{!CancelCalculate.DepositRefundScheduledDate__c}
+■返金先口座：{!CancelCalculate.CancelVirtualCollectBankName__c} {!CancelCalculate.CancelVirtualCollectBranchName__c} {!CancelCalculate.CancelVirtualCollectBankAccountType__c} {!CancelCalculate.CancelVirtualCollectBankAccountNum__c} {!CancelCalculate.CancelVirtualCollectBankAccountName__c} {!CancelCalculate.CancelVirtualCollectBankAccountNameKana__c}
+■連絡事項：{!CancelCalculate.TraderContactMatter__c}
+
+
+
+ご協力いただき、ありがとうございます。
+今後とも、何卒よろしくお願い申し上げます。
+
+
+{!CancelCalculate.Signature__c}

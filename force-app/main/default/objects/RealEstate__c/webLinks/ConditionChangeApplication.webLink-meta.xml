@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConditionChangeApplication</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>条件変更申請（ボタン）</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/ConditionChangeApplication?recordId={!RealEstate__c.Id}</url>
+</WebLink>

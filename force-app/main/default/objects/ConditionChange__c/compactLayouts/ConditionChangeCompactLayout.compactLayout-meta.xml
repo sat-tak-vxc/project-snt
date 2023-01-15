@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConditionChangeCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>RealEstateId__c</fields>
+    <fields>RealEstateName__c</fields>
+    <fields>RoomNum__c</fields>
+    <fields>LenderChangeRegistrationDate__c</fields>
+    <fields>Staff__c</fields>
+    <label>条件変更</label>
+</CompactLayout>

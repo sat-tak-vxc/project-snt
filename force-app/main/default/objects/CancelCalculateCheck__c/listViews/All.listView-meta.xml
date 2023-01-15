@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CheckFieldsName__c</columns>
+    <columns>CheckFieldsValue__c</columns>
+    <columns>CheckResultComment__c</columns>
+    <columns>RegulationFieldsName__c</columns>
+    <columns>RegulationFieldsValue__c</columns>
+    <columns>OperatorCheck__c</columns>
+    <columns>ReconfirmCheck__c</columns>
+    <columns>IsReconfirmMandatory__c</columns>
+    <columns>OperationCheckMasterId__c</columns>
+    <columns>SortOrder__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

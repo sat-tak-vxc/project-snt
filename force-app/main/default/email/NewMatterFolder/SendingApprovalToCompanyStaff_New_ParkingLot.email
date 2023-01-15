@@ -1,0 +1,24 @@
+{!NewMatter.ResidentLastName__c} 様 
+
+いつもお世話になっております。
+
+先日お申し込み頂いておりました駐車場のお手続きですが、
+本日ご決裁の承認を頂きましたのでご報告申し上げます。
+
+1) 概要について
+駐車場名称：{!NewMatter.DecisionRealEstateName__c}　{!NewMatter.DecisionRealEstateRoom__c} 番
+契約開始日：{!NewMatter.ContractStartDate__c}
+
+■管理会社
+{!NewMatter.ManagementTraderName__c}　　TEL：{!NewMatter.ManagementTraderPhone__c}
+※賃貸人に代わり、更新・解約の手続き、および設備修繕等入居中のトラブルに対応してくださる窓口です。
+
+2）その他注意事項
+{!NewMatter.DecisionAtApplicationCounter__c}
+
+
+ご不明な点等がございましたら、弊社までご連絡くださいますようお願い申し上げます。
+
+
+
+{!NewMatter.Signature__c}

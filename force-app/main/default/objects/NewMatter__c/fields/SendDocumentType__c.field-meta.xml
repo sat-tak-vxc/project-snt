@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendDocumentType__c</fullName>
+    <externalId>false</externalId>
+    <label>書類送付方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>メールで送付</fullName>
+                <default>false</default>
+                <label>メールで送付</label>
+            </value>
+            <value>
+                <fullName>chatterに添付</fullName>
+                <default>false</default>
+                <label>chatterに添付</label>
+            </value>
+            <value>
+                <fullName>FAXで送付</fullName>
+                <default>false</default>
+                <label>FAXで送付</label>
+            </value>
+            <value>
+                <fullName>個別に相談済み</fullName>
+                <default>false</default>
+                <label>個別に相談済み</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

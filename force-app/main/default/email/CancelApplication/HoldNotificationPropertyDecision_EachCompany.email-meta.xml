@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>物件決定まで保留</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>保留通知物件決定（個社別ver）</name>
+    <style>none</style>
+    <subject>【ご返信ください】退去申請に伴う解約手続きの可否について　/日本社宅サービス株式会社</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

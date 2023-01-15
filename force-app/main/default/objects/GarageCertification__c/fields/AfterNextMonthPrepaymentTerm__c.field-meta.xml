@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AfterNextMonthPrepaymentTerm__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (
+IF ( MONTH( PrepaymentEndDate__c )  &lt;=   MONTH( ParkingFeePaymentStartDate__c )  , ( MONTH(PrepaymentEndDate__c) + 12) - ( MONTH( ParkingFeePaymentStartDate__c )  + 1) , MONTH( PrepaymentEndDate__c )  - MONTH( ParkingFeePaymentStartDate__c ) ) &lt;= 0, 0, 
+IF ( MONTH( PrepaymentEndDate__c )  &lt;=   MONTH( ParkingFeePaymentStartDate__c )  , ( MONTH(PrepaymentEndDate__c) + 12) -   ( MONTH( ParkingFeePaymentStartDate__c )  + 1) , MONTH( PrepaymentEndDate__c )  - ( MONTH( ParkingFeePaymentStartDate__c )  + 1) ))</formula>
+    <label>翌月以降前納金支払期間</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConfirmationDunningApplicationListCancel</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>ConfirmationArriveDate__c</columns>
+    <columns>ConfirmationDunningApplicationSendFlag__c</columns>
+    <columns>CancelApplicationStaff__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ConfirmationDunningApplicationSendFlag__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ConfirmationArriveDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cancel__c.Cancel</value>
+    </filters>
+    <label>確認書督促案件一覧（解約）</label>
+</ListView>

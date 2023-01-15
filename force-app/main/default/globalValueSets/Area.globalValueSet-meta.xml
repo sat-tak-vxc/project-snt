@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>札幌</fullName>
+        <default>false</default>
+        <label>札幌</label>
+    </customValue>
+    <customValue>
+        <fullName>新宿</fullName>
+        <default>false</default>
+        <label>新宿</label>
+    </customValue>
+    <masterLabel>エリア</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

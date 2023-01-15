@@ -1,0 +1,15 @@
+{!Cancel.ResidentLastName__c}様              
+                 
+いつも大変お世話になっております。          
+日本社宅サービス　解約担当チーム　です。        
+                 
+退去申請を受領いたしましたが、          
+貴社ご指示に伴い、新住居が確定するまで解約手続きは保留いたします。    
+                 
+{!Cancel.RealEstateName__c}{!Cancel.RoomName__c}　　退去予定日：     {!Cancel.MoveOutScheduledDate__c}
+                 
+新住居の決裁承認がおり次第、解約手続きを進めてまいりますので、    
+鍵の返却方法等のご案内までしばらくお待ちくださいますようお願いいたします。
+
+
+{!Cancel.Signature__c}

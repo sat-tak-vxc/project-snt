@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>一定期間到来後も借主控えの返送がない場合、督促連絡を実施</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>借主控えの回収管理(条件変更業務)</name>
+    <style>none</style>
+    <subject>条件変更締結書類ご送付のお願い/日本社宅サービス(株)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

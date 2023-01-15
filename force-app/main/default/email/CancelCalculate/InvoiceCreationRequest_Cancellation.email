@@ -1,0 +1,24 @@
+{!CancelCalculate.CalculateCounterName__c}
+{!CancelCalculate.CalculateCounterStaffLastName__c} 様
+
+いつもお世話になっております。
+日本社宅サービス(株)でございます。
+
+下記物件（駐車場）の賃貸借契約の解約に伴う敷金精算につきまして、
+賃借人の合意が得られましたので、ご連絡申し上げます。
+
+つきましては、下記精算機金を送金させていただきますので、
+振込先口座が記載された「精算書」または「請求書」をご送付くださいますようお願い申し上げます。
+
+■対象物件（駐車場）：{!CancelCalculate.RealEstateName__c}
+■号室（区画番号）：{!CancelCalculate.RoomName__c} 号
+■精算金額：{!CancelCalculate.CalculateConfirmationRefundTotal__c} 円
+■連絡事項：{!CancelCalculate.TraderContactMatter__c}
+
+※ご指定の「精算書」または「請求書」等のご用意がない場合、
+振込先をメールにてご返信いただくか、振込先が記載された書面をFAXにてお送り願います。
+
+お忙しい中お手数をお掛けいたしますが、何卒よろしくお願い申し上げます。
+
+
+{!CancelCalculate.Signature__c}

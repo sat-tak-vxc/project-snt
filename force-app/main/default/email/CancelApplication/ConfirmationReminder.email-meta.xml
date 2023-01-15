@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>解約申入れ書の到着確認と確認書の早期返送を依頼</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>確認書督促</name>
+    <style>none</style>
+    <subject>ご確認書返送のお願い/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

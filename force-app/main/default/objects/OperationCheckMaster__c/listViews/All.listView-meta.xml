@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CheckFieldsName__c</columns>
+    <columns>CheckFieldsDescription__c</columns>
+    <columns>RegulationCheckField__c</columns>
+    <columns>CheckTarget__c</columns>
+    <columns>AutoCheckErrorMessage__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

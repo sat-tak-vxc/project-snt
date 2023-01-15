@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PriorityMediationContactMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>優先斡旋依頼書連絡方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>メール</fullName>
+                <default>true</default>
+                <label>メール</label>
+            </value>
+            <value>
+                <fullName>FAX</fullName>
+                <default>false</default>
+                <label>FAX</label>
+            </value>
+            <value>
+                <fullName>Chatter</fullName>
+                <default>false</default>
+                <label>Chatter</label>
+            </value>
+            <value>
+                <fullName>メール+Chatter</fullName>
+                <default>false</default>
+                <label>メール+Chatter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

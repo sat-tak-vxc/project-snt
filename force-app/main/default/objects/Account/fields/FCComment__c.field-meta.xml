@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FCComment__c</fullName>
+    <externalId>false</externalId>
+    <label>ＦＣコメント</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S_メール</fullName>
+                <default>false</default>
+                <label>S_メール</label>
+            </value>
+            <value>
+                <fullName>メール</fullName>
+                <default>false</default>
+                <label>メール</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelfPayContactByCompanyOverallGuidan__c</fullName>
+    <externalId>false</externalId>
+    <formula>Account__r.ServiceContractNewMatter__r.SelfPayContactByCompanyOverallGuidance__c</formula>
+    <label>個人負担連絡_企業別全体案内</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

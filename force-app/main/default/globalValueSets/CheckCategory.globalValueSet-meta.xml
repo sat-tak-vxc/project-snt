@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>自動</fullName>
+        <default>false</default>
+        <label>自動</label>
+    </customValue>
+    <customValue>
+        <fullName>手動</fullName>
+        <default>false</default>
+        <label>手動</label>
+    </customValue>
+    <customValue>
+        <fullName>OK</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>OK</label>
+    </customValue>
+    <customValue>
+        <fullName>NG</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>NG</label>
+    </customValue>
+    <masterLabel>チェック区分</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

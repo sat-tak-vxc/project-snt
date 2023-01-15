@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyEx</fullName>
+    <active>true</active>
+    <errorConditionFormula>BEGINS(TEXT( TaxRate__c ) ,&quot;In&quot;)</errorConditionFormula>
+    <errorDisplayField>TaxRate__c</errorDisplayField>
+    <errorMessage>精算明細の税率は、外税（税抜価格）で入力してください。</errorMessage>
+</ValidationRule>

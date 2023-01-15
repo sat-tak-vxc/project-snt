@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnallocatedCancelCalculateStaff</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>Resident__c</columns>
+    <columns>CancelCalculateTeam__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CancelCalculateStaff__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>精算担当者未割り当て解約業務</label>
+</ListView>

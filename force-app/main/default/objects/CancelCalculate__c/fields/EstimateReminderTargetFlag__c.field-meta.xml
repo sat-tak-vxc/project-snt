@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EstimateReminderTargetFlag__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND( RepairEstimateCollectScheduleDate__c &lt; TODAY() ,ISNULL(RepairEstimateCollectDate__c))</formula>
+    <label>見積督促対象フラグ</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

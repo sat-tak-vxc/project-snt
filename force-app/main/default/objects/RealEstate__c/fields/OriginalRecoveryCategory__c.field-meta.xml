@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OriginalRecoveryCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>原状回復区分</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>経年変化</fullName>
+                <default>false</default>
+                <label>経年変化</label>
+            </value>
+            <value>
+                <fullName>通常消耗</fullName>
+                <default>false</default>
+                <label>通常消耗</label>
+            </value>
+            <value>
+                <fullName>故意・過失</fullName>
+                <default>false</default>
+                <label>故意・過失</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

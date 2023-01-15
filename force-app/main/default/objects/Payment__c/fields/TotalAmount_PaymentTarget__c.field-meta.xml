@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalAmount_PaymentTarget__c</fullName>
+    <externalId>false</externalId>
+    <label>合計金額_支払対象</label>
+    <summarizedField>PaymentDetail__c.Amount__c</summarizedField>
+    <summaryFilterItems>
+        <field>PaymentDetail__c.IsPaymentTarget__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryForeignKey>PaymentDetail__c.Payment__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

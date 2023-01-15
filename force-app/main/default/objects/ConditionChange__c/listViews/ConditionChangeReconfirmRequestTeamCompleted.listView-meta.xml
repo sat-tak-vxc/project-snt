@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConditionChangeReconfirmRequestTeamCompleted</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ReconfirmRequestTeam__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ReconfirmRequestDate_del__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ReconfirmDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>DecisionApplicationDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>再査担当チームリストビュー(完了)</label>
+</ListView>

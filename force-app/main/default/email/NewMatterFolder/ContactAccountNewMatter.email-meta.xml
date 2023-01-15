@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SNTで決裁承認が完了したことを社宅担当者に通知</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>企業に連絡（新規手続き）</name>
+    <style>none</style>
+    <subject>【決裁報告/新規契約】社宅契約　決裁書類（弊社決裁）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

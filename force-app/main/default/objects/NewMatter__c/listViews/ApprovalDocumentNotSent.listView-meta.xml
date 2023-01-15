@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalDocumentNotSent</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>ResidentName__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>MoveScheduledDate__c</columns>
+    <columns>ConfirmationRegistrationDateRealEsta__c</columns>
+    <columns>DocumentReceiptDate__c</columns>
+    <columns>ContractContentConfirmDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>UruruLinkDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>01_稟議書類未送付</label>
+</ListView>

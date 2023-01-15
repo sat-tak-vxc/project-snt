@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>発生費用の請求書督促</name>
+    <relatedEntityType>GarageCertification__c</relatedEntityType>
+    <style>none</style>
+    <subject>請求書未受領の件について</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

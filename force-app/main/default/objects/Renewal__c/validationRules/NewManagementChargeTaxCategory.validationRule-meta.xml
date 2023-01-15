@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewManagementChargeTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL(    NewManagementCharge__c    )) , 
+ISBLANK( TEXT(   NewManagementChargeTaxCategory__c   ) ) )</errorConditionFormula>
+    <errorDisplayField>NewManagementChargeTaxCategory__c</errorDisplayField>
+    <errorMessage>新管理費税区分を入力してください。</errorMessage>
+</ValidationRule>

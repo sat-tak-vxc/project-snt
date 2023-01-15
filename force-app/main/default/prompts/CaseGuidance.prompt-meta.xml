@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>ケースガイダンス</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;＜物件レコードの検索方法＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;１.グローバル検索窓を活用&lt;/p&gt;&lt;p&gt;①各画面上部にある検索窓に検索したい物件情報を入力する。&lt;/p&gt;&lt;p&gt;※物件名や物件IDによる検索が可能です。&lt;/p&gt;&lt;p&gt;※絞り込みページにて、さらなる絞り込みが可能です。&lt;/p&gt;&lt;p&gt;※物件に限らず、委託企業や入居者の検索も可能です。&lt;/p&gt;&lt;p&gt;➁検索結果から、該当の物件をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;２.物件レコードのリストビューより検索&lt;/p&gt;&lt;p&gt;①タブより物件を選択し、クリックする。&lt;/p&gt;&lt;p&gt;➁リストビュー画面の検索窓に物件情報を入力する。&lt;/p&gt;&lt;p&gt;※物件名や物件IDによる検索が可能です。&lt;/p&gt;&lt;p&gt;➂検索結果から、該当の物件をクリックする。&lt;/p&gt;&lt;p&gt;④該当の物件レコードページが開く。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜ケースレコードの作成＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;１.物件レコードから作成&lt;/p&gt;&lt;p&gt;①物件レコードの「入居中対応」タブをクリックする。&lt;/p&gt;&lt;p&gt;➁ケースの関連リストの「新規」を押下する。&lt;/p&gt;&lt;p&gt;➂ケース新規作成画面にて、必要情報を登録する。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;２.ケースのリストビューより作成&lt;/p&gt;&lt;p&gt;①タブよりケースを選択し、クリックする。&lt;/p&gt;&lt;p&gt;➁リストビュー上の「新規」をクリックする。&lt;/p&gt;&lt;p&gt;➂ケース新規作成画面にて、必要情報を登録する。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜担当チームの割り当て＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;①ケースレコード画面の「担当チーム」項目の横の鉛筆マークを選択する。&lt;/p&gt;&lt;p&gt;➁該当のチームを選択する。&lt;/p&gt;&lt;p&gt;➂「保存」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜各業務レコードの作成＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;１.解約作成&lt;/p&gt;&lt;p&gt;①ケースレコードの「解約作成」をクリックする。&lt;/p&gt;&lt;p&gt;➁必要情報を入力し、「保存」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;２.更新作成&lt;/p&gt;&lt;p&gt;①ケースレコードの「更新作成」をクリックする。&lt;/p&gt;&lt;p&gt;➁必要情報を入力し、「保存」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;３.条件変更作成&lt;/p&gt;&lt;p&gt;①ケースレコードの「条件変更作成」をクリックする。&lt;/p&gt;&lt;p&gt;➁必要情報を入力し、「保存」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜ケースと関連する業務の確認＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;①ケースレコード画面のケースから作成した業務タブをクリックする。&lt;/p&gt;&lt;p&gt;➁業務ごとに一覧化されているので、確認する。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜ケース上でのやりとりについて＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;１.Chatterの活用方法&lt;/p&gt;&lt;p&gt;※SNT内部、ポータル利用者とやりとりが可能です。&lt;/p&gt;&lt;p&gt;①ケースレコード画面のフィードタブをクリックする。&lt;/p&gt;&lt;p&gt;➁投稿タブをクリックする。&lt;/p&gt;&lt;p&gt;➂人型マークをクリックし、送り相手を本文に入力する。&lt;/p&gt;&lt;p&gt;※人型マークはカーソルを合わせると「人とグループへの＠メンション」表示されます。&lt;/p&gt;&lt;p&gt;④本文に内容を記載する。&lt;/p&gt;&lt;p&gt;⑤「共有」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;２.メールの送信&lt;/p&gt;&lt;p&gt;①ケースレコード画面のフィードタブをクリックする。&lt;/p&gt;&lt;p&gt;➁メールタブをクリックする。&lt;/p&gt;&lt;p&gt;➂送信者や宛先等の情報を登録する。&lt;/p&gt;&lt;p&gt;※送信者は自身のメールアドレスが自動で挿入されます。&lt;/p&gt;&lt;p&gt;※宛先欄の右側にある人型マークを押すと、宛先の検索が可能です。&lt;/p&gt;&lt;p&gt;④件名及び本文を入力する。&lt;/p&gt;&lt;p&gt;※本文入力欄の下部にある「テンプレートを挿入、作成、または更新」をクリックすると事前に設定したメールのテンプレート文を挿入できます。&lt;/p&gt;&lt;p&gt;⑤「送信」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;３.活動の記録&lt;/p&gt;&lt;p&gt;①ケースレコード画面のフィードタブをクリックする。&lt;/p&gt;&lt;p&gt;➁活動の記録タブをクリックする。&lt;/p&gt;&lt;p&gt;➂件名とコメントを入力する。&lt;/p&gt;&lt;p&gt;④「保存」をクリックする。&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>入居中対応のガイダンス</header>
+        <isPublished>true</isPublished>
+        <masterLabel>ケースガイダンス</masterLabel>
+        <publishedDate>2022-06-13</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-10</startDate>
+        <targetPageKey1>Case</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>入居中対応の操作説明</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

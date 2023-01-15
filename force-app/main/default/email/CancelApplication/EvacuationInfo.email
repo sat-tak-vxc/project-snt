@@ -1,0 +1,67 @@
+{!Cancel.ResidentLastName__c} 様
+
+いつもお世話になっております。
+社宅退去に関する諸手続き事項をご案内いたします。
+
+1.退去物件名
+社宅名　：{!Cancel.RealEstateName__c}　{!Cancel.RoomName__c} 号室
+
+2.退去予定日等について
+退去予定日　：「{!Cancel.MoveOutScheduledDate__c}」
+解約日　：「{!Cancel.LastRentDefraymentDate__c}」
+
+3.鍵のご返却について
+返却窓口 ：{!Cancel.del_WitnessContactName__c}
+担当 ：{!Cancel.WitnessContactStaffName__c} 様
+連絡先　：{!Cancel.WitnessContactTel__c}
+住 所 ：〒{!Cancel.WitnessContactZipCode__c}
+{!Cancel.WitnessContactAdress__c}　
+鍵の返却方法　：
+{!Cancel.LeaveGuidanceKeyReturnMethod__c}
+
+{!Cancel.LeaveGuidanceComment__c}
+
+4.退去日変更について
+{!Cancel.LeaveDateChangeRule__c}
+
+5.その他連絡事項
+■退去予定日とは、入居者様が住居を明け渡す日（鍵を返却する日）です。
+■解約日とは、賃貸借契約が終了する日となります。
+■{!Cancel.LeaveDateGuidanceContentEmployee__c}
+
+6.退去手続きの流れについて
+【法人の賃貸借契約の解約手続き】
+日本社宅サービスが行います。
+↓
+【退去立会い・鍵の返却方法について】
+上記「３」をご覧の上、入居者様より返却窓口へ鍵をご返却ください。
+↓
+【物件の明け渡し】
+入居者様より鍵を返却窓口へ返却して明け渡し（退去）が完了となります。
+↓
+【原状回復費用の協議】
+■日本社宅サービス（株）にて行います
+原状回復費用の見積もりが、日本社宅サービス（株）に
+届き次第、貸主窓口と借主負担分の妥当性を確認し、
+協議を行います。見積り内容に確認事項がある場合や
+個人負担がある場合は、ご連絡いたします。
+（貸主の事情によっては、2～3ヶ月後のご連絡となる
+場合もございますのでご了承ください。）
+
+7.以下は入居者様にて行う主な手続きです。
+①入居者様の家財の撤去（家具や粗大ゴミ等）
+②公共料金の精算（水道・電気・ガス等）
+③個人契約分の精算（個人契約駐車場・火災保険・インターネット回線等）
+④各種転居手続き（郵便局・銀行・市役所等）
+
+8.退去時チェックリストの入力をお願いいたします。
+以下のURLよりチェックリストの入力を実施してください。
+
+URL：{!Cancel.CheckListUrl__c}
+
+
+ご不明点等ございましたら、当社までご連絡ください。
+どうぞよろしくお願い申し上げます。
+
+お問合せ番号：{!Cancel.RealEstateId__c}
+{!Cancel.Signature__c}

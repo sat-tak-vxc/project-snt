@@ -1,0 +1,22 @@
+{!Cancel.ApplicationCounterName__c}
+{!Cancel.ApplicationCounterChargeLastName__c} 様
+
+いつもお世話になっております。
+
+退去（申入れ）に伴いまして「ご確認書」の書面のご返送をご依頼しておりましたが、
+現在のところまだ確認ができておりません。
+恐れ入りますが、下記期日までにご返送いただけますようお願い申し上げます。
+（既にご返送いただいており、行き違いの場合はご容赦ください）
+
+ご不明点や期日までの返送が難しい場合は、
+お手数ですが弊社までご一報いただけますようお願い申し上げます。
+
+■物件（駐車場）名：{!Cancel.RealEstateName__c}
+■部屋（区画）番号：{!Cancel.RoomName__c}　号
+■借主企業名：{!Cancel.AccountName__c}
+■返送期日：{!Cancel.ConfirmationReturnDeadline__c}
+
+何卒よろしくお願い申し上げます。
+
+
+{!Cancel.Signature__c}

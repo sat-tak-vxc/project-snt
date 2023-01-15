@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckListCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>Employee__c</fields>
+    <fields>AcceptDate__c</fields>
+    <fields>ConfirmDate__c</fields>
+    <label>(削除)チェックリスト</label>
+</CompactLayout>

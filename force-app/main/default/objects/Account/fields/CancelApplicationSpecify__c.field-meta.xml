@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelApplicationSpecify__c</fullName>
+    <externalId>false</externalId>
+    <label>解約申入指定</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>指定なし</fullName>
+                <default>false</default>
+                <label>指定なし</label>
+            </value>
+            <value>
+                <fullName>専用書式有</fullName>
+                <default>false</default>
+                <label>専用書式有</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

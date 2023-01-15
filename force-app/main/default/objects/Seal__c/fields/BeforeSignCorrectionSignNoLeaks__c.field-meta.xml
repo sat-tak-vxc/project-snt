@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BeforeSignCorrectionSignNoLeaks__c</fullName>
+    <externalId>false</externalId>
+    <label>捺印前_訂正印の漏れなし</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OK</fullName>
+                <default>false</default>
+                <label>OK</label>
+            </value>
+            <value>
+                <fullName>NG</fullName>
+                <default>false</default>
+                <label>NG</label>
+            </value>
+            <value>
+                <fullName>未チェック</fullName>
+                <default>false</default>
+                <label>未チェック</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

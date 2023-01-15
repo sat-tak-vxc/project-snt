@@ -1,0 +1,20 @@
+<apex:page standardController="Account">
+    <apex:form >
+    	<apex:pageBlock title="個人情報削除" >
+            <b>取引先ID</b>
+            <apex:inputField value="{! account.name}"/>
+            <apex:commandButton value="削除" onclick="return confirmExecAction();" />
+            <p>入力された取引先IDを持つ取引先が存在しません。</p>
+    	</apex:pageBlock>
+    </apex:form>
+    <script type="text/javascript">
+    	// action実行確認
+    	function confirmExecAction() {
+            if (window.confirm("取引先ID：12345678\r\n取引先名：〇〇株式会社\r\n一括削除します。よろしいですか？")) {
+            	return true;
+            } else {
+            	return false;
+            }
+        }
+    </script>
+</apex:page>

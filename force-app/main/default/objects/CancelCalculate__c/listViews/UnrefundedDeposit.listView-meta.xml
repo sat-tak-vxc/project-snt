@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnrefundedDeposit</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>ManagementCompany__c</columns>
+    <columns>CalculateCounter__c</columns>
+    <columns>CancelCounter__c</columns>
+    <columns>DepositRefundScheduledDate__c</columns>
+    <columns>DepositRefundScheduledAmount__c</columns>
+    <columns>RentBankAccountContractor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DepositRefundScheduledDateProgressDays__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>DepositDifferentAmount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>敷金が未返金な解約業務</label>
+</ListView>

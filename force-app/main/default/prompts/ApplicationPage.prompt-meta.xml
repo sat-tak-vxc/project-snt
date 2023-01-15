@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>申請ページ</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;&lt;u&gt;1.類似申請の確認&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「類似入居申請」「類似退去申請1」「類似退去申請2」「類似退去申請（駐車場）」に記載のある申請を確認&lt;/li&gt;&lt;li&gt;リンク先の申請レコード、その申請に紐づく新規レコード、解約レコード、入替レコードを確認し、どちらのデータを正とするか確認する。&lt;/li&gt;&lt;li&gt;クローズする案件の「新規」「解約」「入替」のステータスを完了に変更する。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;2.申請規定照合エラーの確認&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面下部の「エラーメッセージ」項目に記載がある場合は、社宅規定に抵触しています。内容を確認してください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;&lt;u&gt;3.業務レコードの確認&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「業務状況」タブから、各業務レコードへアクセスします。&lt;/li&gt;&lt;li&gt;上記規定エラーがある場合は、業務レコードが作成されません。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>申請の確認</header>
+        <isPublished>true</isPublished>
+        <masterLabel>申請ページ</masterLabel>
+        <publishedDate>2022-06-19</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-16</startDate>
+        <targetPageKey1>Application__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>申請の確認</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

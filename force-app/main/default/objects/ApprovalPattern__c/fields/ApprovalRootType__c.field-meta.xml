@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalRootType__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>この項目で、承認者が直列に並び、承認者全員の承認が必要となる「一人ずつ承認」ルート、もしくは、複数承認者のうち一人の承認が必要となる「複数人のうち一人が承認」ルートを選択いただけます。</inlineHelpText>
+    <label>承認ルート種別</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Series</fullName>
+                <default>false</default>
+                <label>一人ずつ承認</label>
+            </value>
+            <value>
+                <fullName>Multiple</fullName>
+                <default>false</default>
+                <label>複数人のうち一人が承認</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubtotalA__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ TEXT(RenewalAdministrativeFeeTaxCategory__c )= &quot;Ex8&quot;,
+ BillingRenewalFee__c+BillingRenewalAdministrativeFee__c*1.08+AdditionalDifferenceDeposit__c,
+ IF(TEXT(RenewalAdministrativeFeeTaxCategory__c )= &quot;Ex10&quot;,
+ BillingRenewalFee__c+BillingRenewalAdministrativeFee__c*1.1+AdditionalDifferenceDeposit__c,
+ BillingRenewalFee__c+BillingRenewalAdministrativeFee__c+AdditionalDifferenceDeposit__c)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>小計(A)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

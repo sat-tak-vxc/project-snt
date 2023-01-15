@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustodyRentSubtotal__c</fullName>
+    <externalId>false</externalId>
+    <formula>CustodyRentMonthMinutesRent__c +
+ CustodyRentMonthMinutesCommonCharge__c +
+ CustodyRentMonthMinutesGarage__c +
+ CustodyRentMonthMinutesManagementCharge__c +
+ CustodyRentOther1Amount__c +
+ CustodyRentOther2Amount__c +
+ CustodyRentOther3Amount__c +
+ CustodyRentOther4Amount__c</formula>
+    <label>預り家賃_小計</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

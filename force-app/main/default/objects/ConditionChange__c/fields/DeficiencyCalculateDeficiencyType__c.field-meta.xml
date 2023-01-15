@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeficiencyCalculateDeficiencyType__c</fullName>
+    <externalId>false</externalId>
+    <label>過不足精算_区分</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>過剰分</fullName>
+                <default>false</default>
+                <label>過剰分</label>
+            </value>
+            <value>
+                <fullName>不足分</fullName>
+                <default>false</default>
+                <label>不足分</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

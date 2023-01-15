@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegisterWithoutMediationTodoMessage__c</fullName>
+    <externalId>false</externalId>
+    <label>未斡旋依頼の決定物件登録Todo</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

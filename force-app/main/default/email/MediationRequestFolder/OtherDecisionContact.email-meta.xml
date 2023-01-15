@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>入居者が選ばなかった不動産仲介会社に対して、他社で決定した旨を連絡</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>他決連絡</name>
+    <style>none</style>
+    <subject>【斡旋結果のご報告】物件紹介停止のお願い　斡旋依頼ID：{!MediationRequest.MediationRequestId__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

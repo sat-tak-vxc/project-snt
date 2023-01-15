@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResidentChangeChargeTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( ResidentChangeCharge__c )) , ISBLANK( TEXT(   ResidentChangeChargeTaxCategory__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>ResidentChangeChargeTaxCategory__c</errorDisplayField>
+    <errorMessage>入居者変更料税区分を入力してください</errorMessage>
+</ValidationRule>

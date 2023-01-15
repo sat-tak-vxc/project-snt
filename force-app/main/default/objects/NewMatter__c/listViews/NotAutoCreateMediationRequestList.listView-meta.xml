@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotAutoCreateMediationRequestList</fullName>
+    <columns>NAME</columns>
+    <columns>Application__c</columns>
+    <columns>AccountName__c</columns>
+    <columns>MoveScheduledDate__c</columns>
+    <columns>Resident__c</columns>
+    <columns>ProxyContact__c</columns>
+    <columns>DesiredPreviewDate1__c</columns>
+    <columns>DesiredPreviewDate2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>斡旋依頼が行われていない案件一覧</label>
+</ListView>

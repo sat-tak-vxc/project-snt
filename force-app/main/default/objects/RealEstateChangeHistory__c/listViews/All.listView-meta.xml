@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>RealEstate__c</columns>
+    <columns>IsTarget__c</columns>
+    <columns>UpdateDate__c</columns>
+    <columns>UpdateFields__c</columns>
+    <columns>PreviousValue__c</columns>
+    <columns>NewValue__c</columns>
+    <columns>IsChanged__c</columns>
+    <columns>IsAutoUpdate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsTarget__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>すべて選択</label>
+</ListView>

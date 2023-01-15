@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>ナレッジガイダンス</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;＜ナレッジの登録＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;①タブよりナレッジを選択して、クリックする。&lt;/p&gt;&lt;p&gt;➁ナレッジのリストビュー上の「新規」をクリックする。&lt;/p&gt;&lt;p&gt;➂ナレッジ作成画面にて、必要情報を登録し、「保存」をクリックする。&lt;/p&gt;&lt;p&gt;※「顧客に表示」にチェックをつかえると下記記載の公開操作を行った際に外部ポータルにナレッジが表示されます。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜ナレッジの公開＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;１.ナレッジ公開権限をもつ担当者への承認申請（申請者操作）&lt;/p&gt;&lt;p&gt;①ナレッジレコードページ上の「承認申請」をクリックする。&lt;/p&gt;&lt;p&gt;➁承認者を選択する。&lt;/p&gt;&lt;p&gt;➂必要に応じてコメントを記載し、「完了」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;２.承認申請の承諾と却下（承認者操作）&lt;/p&gt;&lt;p&gt;①右上の通知マーク（ベルマーク）より該当の承認申請を選択し、クリックする。&lt;/p&gt;&lt;p&gt;※ナレッジの関連タブより承認履歴から選択も可能です。&lt;/p&gt;&lt;p&gt;➁承認画面が表示されるので、「承認」「却下」を選択し、クリックする。&lt;/p&gt;&lt;p&gt;※上記にて「承認」が選択されるとナレッジレコードの承認ステータス項目が「承認済み」に更新されます。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;３.ナレッジ公開の操作（申請者操作）&lt;/p&gt;&lt;p&gt;①ナレッジレコードページ上の「公開」をクリックする。&lt;/p&gt;&lt;p&gt;➁公開するタイミングを設定し、「完了」をクリックする。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;＜ナレッジの編集＞&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;①リストビューより該当するナレッジレコードの右にあるした▼をクリックする。&lt;/p&gt;&lt;p&gt;➁「ドラフトとして編集する」をクリックする。&lt;/p&gt;&lt;p&gt;➂ナレッジ編集画面が出てくるので、内容を編集し、「保存」をクリックする。&lt;/p&gt;&lt;p&gt;※以降の承認申請→公開の操作は上記＜ナレッジ公開＞の１～３と同様です。&lt;/p&gt;&lt;p&gt;※ナレッジはバージョンの概念で管理します。（ドラフトで編集するとバージョンが自動的に上がっていく）&lt;/p&gt;&lt;p&gt;※前のバージョンは関連タブのバージョンの関連リストより確認できます。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>ナレッジガイダンス</header>
+        <isPublished>true</isPublished>
+        <masterLabel>ナレッジガイダンス</masterLabel>
+        <publishedDate>2022-06-13</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-13</startDate>
+        <targetPageKey1>Knowledge__kav</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>ナレッジ操作のガイダンス</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

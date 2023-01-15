@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsFifthSetCollect__c</fullName>
+    <description>フロー（NM_五点書類の督促/NM_FiveDocumentsReminder）で使用</description>
+    <externalId>false</externalId>
+    <formula>AND( FifthSetCollectScheduledDate__c &lt; Today(),  ISBLANK( FifthSetCollectDate__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>五点督促対象</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

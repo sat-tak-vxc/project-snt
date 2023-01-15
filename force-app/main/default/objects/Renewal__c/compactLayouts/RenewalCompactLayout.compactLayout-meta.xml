@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>RealEstateId__c</fields>
+    <fields>RealEstate__c</fields>
+    <fields>RoomNum__c</fields>
+    <fields>Stage__c</fields>
+    <fields>ContractEndDate__c</fields>
+    <label>更新</label>
+</CompactLayout>

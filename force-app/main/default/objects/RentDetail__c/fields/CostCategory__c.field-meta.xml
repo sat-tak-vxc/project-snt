@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CostCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>費用分類</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>固定費</fullName>
+                <default>false</default>
+                <label>固定費</label>
+            </value>
+            <value>
+                <fullName>季節変動費</fullName>
+                <default>false</default>
+                <label>季節変動費</label>
+            </value>
+            <value>
+                <fullName>月次変動費</fullName>
+                <default>false</default>
+                <label>月次変動費</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

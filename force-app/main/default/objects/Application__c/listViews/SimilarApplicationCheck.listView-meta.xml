@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SimilarApplicationCheck</fullName>
+    <columns>NAME</columns>
+    <columns>IsSimilarApplicationCheckImplementation__c</columns>
+    <columns>IsSimilarApplication__c</columns>
+    <columns>SimilarMoveApplication__c</columns>
+    <columns>SimilarLeaveApplication__c</columns>
+    <columns>SimilarLeaveApplication2__c</columns>
+    <columns>SimilarLeaveApplication3__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsSimilarApplication__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>類似申請チェック一覧</label>
+</ListView>

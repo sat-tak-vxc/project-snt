@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewCommonChargeTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL(   NewCommonCharge__c   )) , 
+ISBLANK( TEXT( NewCommonChargeTaxCategory__c   ) ) )</errorConditionFormula>
+    <errorDisplayField>NewCommonChargeTaxCategory__c</errorDisplayField>
+    <errorMessage>新共益費税区分を入力してください</errorMessage>
+</ValidationRule>

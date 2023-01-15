@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Origin, &quot;メール&quot;, IMAGE(&quot;/resource/OriginIcon/Email.png&quot;, &quot;メール&quot;, 22, 22), 
+&quot;電話&quot;, IMAGE(&quot;/resource/OriginIcon/Phone.png&quot;, &quot;電話&quot;, 22, 22), 
+&quot;Web&quot;, IMAGE(&quot;/resource/OriginIcon/Web.png&quot;, &quot;Web&quot;, 22, 22), 
+IMAGE(&quot;/resource/OriginIcon/WebCase.png&quot;, &quot;Web&quot;, 22, 22))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>発生源アイコン</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

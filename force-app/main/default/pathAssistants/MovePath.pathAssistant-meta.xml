@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Change__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>入替入居</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>ClosedDate__c</fieldNames>
+        <picklistValueName>完了</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ApplicantConfirmDate__c</fieldNames>
+        <fieldNames>ApplicationFormArriveDate__c</fieldNames>
+        <info>&lt;p&gt;申請内容を確認してください。&lt;/p&gt;</info>
+        <picklistValueName>申請待ち</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ReceiptConfirmDate__c</fieldNames>
+        <info>&lt;p&gt;見積依頼を行ってください。&lt;/p&gt;</info>
+        <picklistValueName>申請確認中</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ManagementCompanyContactDate__c</fieldNames>
+        <fieldNames>GuidanceDate__c</fieldNames>
+        <picklistValueName>見積り待ち</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Move</recordTypeName>
+</PathAssistant>

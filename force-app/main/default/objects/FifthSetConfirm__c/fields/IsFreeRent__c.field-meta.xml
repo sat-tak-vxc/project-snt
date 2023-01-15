@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsFreeRent__c</fullName>
+    <externalId>false</externalId>
+    <label>フリーレント</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>無</fullName>
+                <default>false</default>
+                <label>無</label>
+            </value>
+            <value>
+                <fullName>家賃のみ</fullName>
+                <default>false</default>
+                <label>家賃のみ</label>
+            </value>
+            <value>
+                <fullName>月額計</fullName>
+                <default>false</default>
+                <label>月額計</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

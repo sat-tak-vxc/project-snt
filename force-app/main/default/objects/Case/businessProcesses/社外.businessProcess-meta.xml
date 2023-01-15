@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>社外</fullName>
+    <isActive>true</isActive>
+    <values>
+        <fullName>受付中</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>対応中</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>対応完了</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>NewApplication__c</columns>
+    <columns>PreviousApplication__c</columns>
+    <columns>NewMatter__c</columns>
+    <columns>Cancel__c</columns>
+    <columns>ChangeMove__c</columns>
+    <columns>ChangeLeave__c</columns>
+    <columns>ChangeContent__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

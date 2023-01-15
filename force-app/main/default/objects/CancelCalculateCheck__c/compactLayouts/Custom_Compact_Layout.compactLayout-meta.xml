@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>CheckFieldsName__c</fields>
+    <fields>RegulationFieldsName__c</fields>
+    <fields>OperatorCheck__c</fields>
+    <fields>ReconfirmCheck__c</fields>
+    <fields>IsReconfirmMandatory__c</fields>
+    <fields>OperationCheckMasterId__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

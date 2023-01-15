@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SNTから不動産管理会社/家主へ、企業の決裁承認が完了したことを連絡</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>不動産宛承認連絡送付(更新業務)</name>
+    <style>none</style>
+    <subject>更新意思のご連絡/日本社宅サービス</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

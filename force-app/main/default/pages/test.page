@@ -1,0 +1,42 @@
+<apex:page renderas="pdf" applyhtmltag="false" showheader="false" standardController="NewMatter__c">
+
+    <head>
+        <style>
+            body {
+                font-family: Arial Unicode MS;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            #annotation {
+                font-size: 10px;
+                padding: 10px;
+            }
+
+            #newMatterId {
+                font-size: 10px;
+                text-align: right;
+
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <p id="annotation">※よろしければ、契約書をお送りいただく際には本紙を送付書としてご使用ください。</p>
+        <h1>[契約書類送付書](社宅)</h1>
+        <p id="newMatterId">新規ID {!NewMatter__c.NewMatterId__c}</p>
+        <p>{!NewMatter__c.Name}</p>
+
+    </body>
+
+
+</apex:page>

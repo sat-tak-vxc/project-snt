@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InsuranceType__c</fullName>
+    <externalId>false</externalId>
+    <label>保険種別</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>火災保険</fullName>
+                <default>false</default>
+                <label>火災保険</label>
+            </value>
+            <value>
+                <fullName>地震保険</fullName>
+                <default>false</default>
+                <label>地震保険</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

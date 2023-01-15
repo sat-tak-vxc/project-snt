@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>不動産へ業務委託証明書を送付する</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>業務委託証明書送付</name>
+    <style>none</style>
+    <subject>【ご確認】業務委託書送付の件/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

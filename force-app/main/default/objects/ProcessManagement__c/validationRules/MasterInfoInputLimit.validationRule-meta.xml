@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MasterInfoInputLimit</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+ISCHANGED( Account__c ),
+ISCHANGED( OperationCategory__c ),
+ISCHANGED( OperationCategorySupplement__c ),
+ISCHANGED( SendDueDate__c )
+)</errorConditionFormula>
+    <errorMessage>取引先、業務区分、業務区分_補足、送付期日の入力情報は変更できません。</errorMessage>
+</ValidationRule>

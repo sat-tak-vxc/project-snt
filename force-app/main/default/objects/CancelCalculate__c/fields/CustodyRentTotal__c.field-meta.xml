@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustodyRentTotal__c</fullName>
+    <externalId>false</externalId>
+    <formula>CustodyRentOther1Amount__c  +  CustodyRentOther2Amount__c  +  CustodyRentOther3Amount__c  +  CustodyRentOther4Amount__c  +  CancelMonthRent__c  +  CancelCustodyManagementCharge__c  +  CancelMonthCommonCharge__c  +  CancelMonthRateParking__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>預かり賃料合計</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExcessiveRentResult__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(LastRentDefraymentDate__c &gt;=  CancelOffer__c +29,  MoveOutScheduledDate__c &lt; LastRentDefraymentDate__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>過剰家賃結果</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

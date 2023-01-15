@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>NewMatter__c</columns>
+    <columns>DocumentName__c</columns>
+    <columns>ConfirmPart__c</columns>
+    <columns>ConfirmContent__c</columns>
+    <columns>ConfirmDate__c</columns>
+    <columns>CorrespondenceFeasibility__c</columns>
+    <columns>ContractDocumentReflectionNecessity__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

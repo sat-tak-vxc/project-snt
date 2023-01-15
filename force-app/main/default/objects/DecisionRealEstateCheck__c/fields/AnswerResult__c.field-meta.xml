@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnswerResult__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+      OR(
+        ISPICKVAL(Reply1__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply2__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply3__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply4__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply5__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply6__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply7__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply8__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply9__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply10__c , &quot;いいえ&quot;),
+        ISPICKVAL(Reply1__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply2__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply3__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply4__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply5__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply6__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply7__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply8__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply9__c , &quot;確認中&quot;),
+        ISPICKVAL(Reply10__c , &quot;確認中&quot;)
+      ), &quot;確認事項有り&quot;, &quot;OK&quot;
+    )</formula>
+    <label>回答結果</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

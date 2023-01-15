@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RetiredPersonReminderTarget</fullName>
+    <columns>NAME</columns>
+    <columns>RealEstate__c</columns>
+    <columns>Resident__c</columns>
+    <columns>IsRetireExpectedPersonReminder__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>IsRetireExpectedPersonReminder__c</field>
+        <operation>equals</operation>
+        <value>督促対象</value>
+    </filters>
+    <label>退職者_督促対象</label>
+</ListView>

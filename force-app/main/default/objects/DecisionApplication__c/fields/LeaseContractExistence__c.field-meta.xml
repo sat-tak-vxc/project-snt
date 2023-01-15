@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeaseContractExistence__c</fullName>
+    <externalId>false</externalId>
+    <label>賃貸借契約の有無</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>有</fullName>
+                <default>false</default>
+                <label>有</label>
+            </value>
+            <value>
+                <fullName>無</fullName>
+                <default>false</default>
+                <label>無</label>
+            </value>
+            <value>
+                <fullName>有（但し再整備が必要）</fullName>
+                <default>false</default>
+                <label>有（但し再整備が必要）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

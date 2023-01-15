@@ -1,0 +1,16 @@
+いつもお世話になっております。    
+先日ご依頼させて頂きました下記お客様の新社宅ですが、    
+既に決定されましたのでご報告申し上げます。    
+ご対応頂き、誠にありがとうございました。    
+    
+    
+企業名: {!MediationRequest.AgencyTraderNameCalc__c}
+紹介依頼日: {!MediationRequest.MediationRequestDate__c}
+斡旋依頼ID: {!MediationRequest.MediationRequestId__c}
+※個人情報は控えさせていただいております。    
+    
+    
+今後とも、よろしくお願い申し上げます。    
+
+
+{!MediationRequest.Signature__c}

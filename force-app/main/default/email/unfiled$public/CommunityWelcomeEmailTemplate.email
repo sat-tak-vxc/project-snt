@@ -1,0 +1,8 @@
+{!Receiving_User.FirstName} 様
+
+            {!Community_Name}へようこそ! 使用を開始するには、{!Community_Url} にアクセスしてください
+
+            ユーザ名: {!Receiving_User.Username}
+
+            よろしくお願いします。
+            {!Organization.Name}

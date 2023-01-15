@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreviousOtherFieldsTaxType2</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( OtherAmount2__c )) , ISBLANK( TEXT( PreviousOtherFieldsTaxType2__c ) ) )</errorConditionFormula>
+    <errorDisplayField>PreviousOtherFieldsTaxType2__c</errorDisplayField>
+    <errorMessage>その他2_税区分を入力してください</errorMessage>
+</ValidationRule>

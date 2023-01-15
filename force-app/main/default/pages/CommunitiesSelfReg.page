@@ -1,0 +1,43 @@
+<apex:page id="communitiesSelfRegPage"
+  showHeader="true"
+  controller="CommunitiesSelfRegController"
+  title="{!$Label.site.user_registration}">
+  <apex:define name="body">
+    <center>
+      <apex:form id="theForm" forceSSL="true">
+        <apex:pageMessages id="error"/>
+        <apex:panelGrid columns="2" style="margin-top:1em;">
+          <!--<apex:outputLabel value="{!$Setup.UserRegistration__c.AccountIdLabel__c}" for="accountId"/>
+          <apex:inputText required="false" id="accountId" value="{!accountId}" label="{!$Setup.UserRegistration__c.AccountIdLabel__c}" html-autocomplete="off"/>-->
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.CommunityUsernameLabel__c}" for="communityUsername"/>
+          <apex:inputText required="false" id="communityUsername" value="{!communityUsername}" label="{!$Setup.UserRegistration__c.CommunityUsernameLabel__c}" html-autocomplete="off"/>
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.LastnameLabel__c}" for="lastname"/>
+          <apex:inputText required="false" id="lastname" value="{!lastname}" label="{!$Setup.UserRegistration__c.LastnameLabel__c}" html-autocomplete="off"/>
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.FirstnameLabel__c}" for="firstname"/>
+          <apex:inputText required="false" id="firstname" value="{!firstname}" label="{!$Setup.UserRegistration__c.FirstnameLabel__c}" html-autocomplete="off"/>
+          <!--<apex:outputLabel value="{!$Setup.UserRegistration__c.CommunityNicknameLabel__c}" for="communityNickname"/>
+          <apex:inputText required="false" id="communityNickname" value="{!communityNickname}" label="{!$Setup.UserRegistration__c.CommunityNicknameLabel__c}" html-autocomplete="off"/>-->
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.EmailLabel__c}" for="email"/>
+          <apex:inputText required="false" id="email" value="{!email}" label="{!$Setup.UserRegistration__c.EmailLabel__c}" html-autocomplete="off"/>
+          <!--<apex:outputLabel value="{!$Setup.UserRegistration__c.PhoneLabel__c}" for="phone"/>
+          <apex:inputText required="false" id="phone" value="{!phone}" label="{!$Setup.UserRegistration__c.PhoneLabel__c}" html-autocomplete="off"/>
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.PasswordLabel__c}" for="password"/>
+          <apex:inputSecret required="false" id="password" value="{!password}" label="{!$Setup.UserRegistration__c.PasswordLabel__c}"/>
+          <apex:outputLabel value="{!$Setup.UserRegistration__c.ConfirmPasswordLabel__c}" for="confirmPassword"/>
+          <apex:inputSecret required="false" id="confirmPassword" value="{!confirmPassword}" label="{!$Setup.UserRegistration__c.ConfirmPasswordLabel__c}"/>-->
+          <apex:outputText value=""/>
+          <apex:commandButton action="{!registerUser}" value="{!$Label.site.register}" id="register"/>
+          <apex:outputText value=""/>
+          <apex:outputText value=""/>
+          <apex:outputText value=""/>
+          <apex:outputLink value="{!$Page.CommunitiesLogin}">
+            <apex:param name="startURL" value="{!URLENCODE($CurrentPage.parameters.startURL)}" />
+            {!$Label.site.go_to_login_page}
+          </apex:outputLink>
+        </apex:panelGrid>
+        <br/>
+      </apex:form>
+    </center>
+    <br/>
+  </apex:define>
+</apex:page>

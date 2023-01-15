@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdjustmentRequestUnanswered</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>ResidentName__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>MoveScheduledDate__c</columns>
+    <columns>DocumentReceiptDate__c</columns>
+    <columns>AgencyConfirmRequestDate__c</columns>
+    <columns>ConfirmRequestReplyDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AgencyConfirmRequestDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>SecondaryToFirstConfirmRequestDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>03_調整依頼未回答</label>
+</ListView>

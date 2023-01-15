@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalRecordCreateDateNotEntered</fullName>
+    <columns>NAME</columns>
+    <columns>RenewalRecordCreateDate__c</columns>
+    <columns>BrrowerCancelNoticeNum__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>RenewalRecordCreateDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>更新レコード</value>
+    </filters>
+    <label>更新レコード自動作成日未入力一覧</label>
+</ListView>

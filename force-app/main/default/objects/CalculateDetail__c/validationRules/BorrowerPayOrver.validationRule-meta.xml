@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BorrowerPayOrver</fullName>
+    <active>true</active>
+    <errorConditionFormula>BorrowerPay__c &gt;( UnitPrice__c * Quantity__c)</errorConditionFormula>
+    <errorDisplayField>BorrowerPay__c</errorDisplayField>
+    <errorMessage>借主負担の値が不正です。単価×数量 以下の値を記入してください。</errorMessage>
+</ValidationRule>

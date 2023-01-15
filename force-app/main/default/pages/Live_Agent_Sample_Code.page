@@ -1,0 +1,21 @@
+<apex:page cache="false" showHeader="false" standardStylesheets="false" sidebar="false">
+
+<h1>Live Agent Sample Page</h1>
+
+<script type='text/javascript' src='https://c.la1-c1-ukb.salesforceliveagent.com/content/g/js/41.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c1-ukb.salesforceliveagent.com/chat', '5725h000000Lxa3', '00D5h0000029Fh5');
+</script>
+
+<body>
+<a id="liveagent_button_online_5735h000000LxCT" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5735h000000LxCT')">オンライン</a>
+<div id="liveagent_button_offline_5735h000000LxCT" style="display: none;">オフライン</div>
+
+<script type="text/javascript">
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('5735h000000LxCT', document.getElementById('liveagent_button_online_5735h000000LxCT'));
+liveagent.showWhenOffline('5735h000000LxCT', document.getElementById('liveagent_button_offline_5735h000000LxCT'));
+});</script>
+</body>
+
+</apex:page>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DailyRateCmChargeDifferenceTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT( ISNULL ( DailyRateCommonChargeDifference__c )) ,
+DailyRateCommonChargeDifference__c=0,
+ISBLANK( TEXT( DailyRateCmChargeDifferenceTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>DailyRateCmChargeDifferenceTaxCategory__c</errorDisplayField>
+    <errorMessage>日割共益差額税区分を入力してください</errorMessage>
+</ValidationRule>

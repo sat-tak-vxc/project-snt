@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IncompleteGarageCertification</fullName>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>NewMatter__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>contains</operation>
+        <value>未着手,進行中</value>
+    </filters>
+    <label>未完了の車庫証明</label>
+</ListView>

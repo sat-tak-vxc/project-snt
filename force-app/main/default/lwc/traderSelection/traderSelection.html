@@ -1,0 +1,217 @@
+<template>
+
+    <template if:true={isRegisterMode}>
+        <lightning-card
+            title="">
+            <div slot="actions">
+                <lightning-button-group>
+                    <lightning-button
+                        type="submit"
+                        icon-name={toggleIconName}
+                        icon-position="left"
+                        variant="brand-outline"
+                        label={toggleButtonLabel}
+                        onclick={hundleOnclickButtonChevrondown}
+                    >
+                    </lightning-button>
+                </lightning-button-group>
+            </div>
+        </lightning-card>
+    </template>
+
+    <template if:true={isToggleOpen}>
+        <lightning-card
+            title={selectionRuleTitle}
+            icon-name="standard:display_text">
+            <div class="slds-var-m-horizontal_small" style="height: 200px; border: 1px solid #000; overflow-y: scroll; margin-bottom:1.5rem;">
+                <lightning-formatted-rich-text value={bodyPreview} class="slds-var-m-horizontal_small">
+                </lightning-formatted-rich-text>
+            </div>
+        </lightning-card>
+
+        <lightning-card
+            title="希望不動産会社"
+            icon-name="standard:display_text">
+            <div class="slds-var-m-horizontal_small" style="margin-bottom:1.5rem;">
+                <lightning-input type="text" value={desiredAgencyValue} label=" " variant="label-hidden" placeholder="" autocomplete="off" read-only></lightning-input>
+            </div>
+        </lightning-card>
+
+        <lightning-card
+            title="検索"
+            icon-name="standard:search">
+            <div slot="actions">
+                <lightning-button-group>
+                    <lightning-button
+                        type="submit"
+                        icon-name="utility:search"
+                        icon-position="left"
+                        variant="brand"
+                        label="検索"
+                        onclick={hundleOnclickButtonSearch}
+                    >
+                    </lightning-button>
+                </lightning-button-group>
+            </div>
+            <div class="slds-var-m-left_large slds-var-m-bottom_small slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <lightning-input
+                        type="search"
+                        name="search_account_id"
+                        label="取引先ID"
+                        placeholder=""
+                        autocomplete="off"
+                        min-length="2"
+                        class="slds-var-m-horizontal_small"
+                        value={searchAccountIdValue}
+                        onblur={handleOnblurSearchAccountId}
+                        >
+                    </lightning-input>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <lightning-input
+                        type="search"
+                        name="search_account_name"
+                        label="取引先名"
+                        placeholder=""
+                        autocomplete="off"
+                        class="slds-var-m-horizontal_small"
+                        value={searchAccountNameValue}
+                        onblur={handleOnblurSearchAccountName}
+                        >
+                    </lightning-input>
+                </div>
+            </div>
+
+            <div class="slds-var-m-left_large slds-var-m-bottom_small slds-grid slds-wrap" style="margin-bottom:1.5rem;">
+                <div class="slds-col slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <lightning-combobox
+                        name="search_state"
+                        label="都道府県"
+                        value={searchStateValue}
+                        placeholder="都道府県を選択"
+                        options={searchStateOptions}
+                        class="slds-var-m-horizontal_small"
+                        onchange={handleOnchangeSearchState}
+                        >
+                    </lightning-combobox>
+                </div>
+
+                <div class="slds-col slds-size_1-of-2 slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                    <lightning-combobox
+                        name="search_city"
+                        label="市区町村"
+                        value={searchCityValue}
+                        placeholder="市区町村を選択"
+                        options={searchCityOptions} 
+                        class="slds-var-m-horizontal_small"
+                        onchange={handleOnchangeSearchCity}
+                        disabled={isDisabledSearchCity}
+                        >
+                    </lightning-combobox>
+                </div>
+            </div>
+        </lightning-card>
+
+            <lightning-card
+                title="業者選択"
+                icon-name="standard:contact_list">
+
+                <template if:true={isSelectEstateAgencyOpen}>
+                    <span class="">
+                        選定可能業者
+                    </span>
+                    <div style="height: 250px; margin-bottom:1rem;">
+                        <lightning-datatable
+                                key-field="id"
+                                data={selectEstateAgencyData}
+                                columns={selectEstateAgencyColumns}
+                                hide-checkbox-column
+                                default-sort-direction={defaultSortDirection}
+                                sorted-direction={sortDirection}
+                                sorted-by={sortedBy}
+                                onsort={onHandleSort}
+                                onrowaction={handleRowAction}
+                                >
+                        </lightning-datatable>
+                    </div>
+
+                </template>
+                <template if:false={isSelectEstateAgencyOpen}>
+                    <div style="margin-bottom:2rem;"></div>
+                </template>
+            </lightning-card>
+        
+    </template>
+
+    <lightning-card
+        title="斡旋確認"
+        icon-name="standard:contact_list">
+        <div slot="actions">
+            <lightning-button-group>
+                <template if:true={isRegisterMode}>
+                    <lightning-button
+                        type="submit"
+                        icon-position="left"
+                        variant="brand"
+                        label="斡旋依頼"
+                        onclick={hundleOnclickButton}
+                        disabled={isMediationRequestCountCheck}
+                    >
+                    </lightning-button>
+                </template>
+            </lightning-button-group>
+        </div>
+        <span class="">
+            斡旋依頼業者
+        </span>
+        <div  class="slds-float_right">
+            <span class="">
+                斡旋依頼数　{mediationRequestCount}/{mediationRequestTotalCount}
+            </span>
+        </div>  
+        <div style="height: 250px;">
+            <lightning-datatable
+                    key-field="id_2"
+                    data={mediationAccountData}
+                    columns={mediationAccountColumns}
+                    hide-checkbox-column
+                    onrowaction={handleRowAction}
+                    >
+            </lightning-datatable>
+        </div>    
+    </lightning-card>
+
+    <template if:true={isEditDialog} >
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hundleOnclickCancel}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">確認メッセージ</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p>{dialogMessage}</p>
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={hundleOnclickCancel}>閉じる</button>
+                    <button class="slds-button slds-button_brand" onclick={hundleOnclickAction} >実行</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+    <!-- ローディング -->
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner>
+    </template>
+
+</template>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeliveryAddressMaster__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>送付先マスタ</label>
+    <referenceTo>DeliveryAddressMaster__c</referenceTo>
+    <relationshipLabel>工程管理マスタ</relationshipLabel>
+    <relationshipName>ProcessManagementMaster</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

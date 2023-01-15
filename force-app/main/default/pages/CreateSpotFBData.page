@@ -1,0 +1,20 @@
+<apex:page standardController="Account">
+    <apex:form >
+    	<apex:pageBlock title="スポットFBデータ作成" >
+            <b>送金日</b>
+            <apex:inputField value="{! account.name}"/>
+            <apex:commandButton value="実行" onclick="return confirmExecAction();" />
+            <p>明日以降の日付を入力してください。</p>
+    	</apex:pageBlock>
+    </apex:form>
+    <script type="text/javascript">
+    	// action実行確認
+    	function confirmExecAction() {
+            if (window.confirm("送金日：2022/01/31\r\nスポットFBデータを作成します。よろしいですか？")) {
+            	return true;
+            } else {
+            	return false;
+            }
+        }
+    </script>
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChangeApplication_MoveIn</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>変更申請（入居）</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/flow/MoveInApplication?recordId={!Application__c.Id}&amp;retURL=s/</url>
+</WebLink>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherScreenDoorCurrentStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>その他_網戸_現在の状況</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>良</fullName>
+                <default>false</default>
+                <label>良</label>
+            </value>
+            <value>
+                <fullName>不良</fullName>
+                <default>false</default>
+                <label>不良</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

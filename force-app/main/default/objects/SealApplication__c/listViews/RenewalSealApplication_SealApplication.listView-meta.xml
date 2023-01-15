@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RenewalSealApplication_SealApplication</fullName>
+    <filterScope>Queue</filterScope>
+    <label>更新捺印申請チーム</label>
+    <queue>RenewalSealApplication</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

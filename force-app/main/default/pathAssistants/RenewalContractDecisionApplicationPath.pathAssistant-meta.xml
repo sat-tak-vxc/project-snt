@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>DecisionApplication__c</entityName>
+    <fieldName>Status__c</fieldName>
+    <masterLabel>更新契約決裁申請</masterLabel>
+    <recordTypeName>RenewalContractDecisionApplication</recordTypeName>
+</PathAssistant>

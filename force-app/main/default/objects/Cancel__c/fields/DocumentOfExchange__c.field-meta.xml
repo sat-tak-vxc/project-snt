@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocumentOfExchange__c</fullName>
+    <externalId>false</externalId>
+    <label>書類の取り交わし</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>契約書再締結</fullName>
+                <default>false</default>
+                <label>契約書再締結</label>
+            </value>
+            <value>
+                <fullName>覚書(管理指定）</fullName>
+                <default>false</default>
+                <label>覚書(管理指定）</label>
+            </value>
+            <value>
+                <fullName>覚書(SNT作成）</fullName>
+                <default>false</default>
+                <label>覚書(SNT作成）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

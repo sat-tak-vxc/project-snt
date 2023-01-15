@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DailyRateGarageDifferenceTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL ( DailyRateGarageDifference__c )) ,
+DailyRateGarageDifference__c=0,
+ISBLANK( TEXT( DailyRateGarageDifferenceTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>DailyRateGarageDifferenceTaxCategory__c</errorDisplayField>
+    <errorMessage>日割駐車差額税区分を入力してください</errorMessage>
+</ValidationRule>

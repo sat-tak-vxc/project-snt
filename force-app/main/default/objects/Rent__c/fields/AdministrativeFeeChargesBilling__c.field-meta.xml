@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AdministrativeFeeChargesBilling__c</fullName>
+    <externalId>false</externalId>
+    <label>事務手数料請求</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>必要</fullName>
+                <default>false</default>
+                <label>必要</label>
+            </value>
+            <value>
+                <fullName>不要</fullName>
+                <default>false</default>
+                <label>不要</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>入替</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;進捗管理項目の登録&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;進捗管理タブの日付項目に日付を入力してください。&lt;/li&gt;&lt;li&gt;自動で入力者が右の項目に入力され、活動レコードが作成されます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;各種案内や依頼&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;画面右のメールタブやChatterタブを利用し、企業社員や不動産管理会社に案内や依頼を行ってください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;同一物件に対する入替の確認&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;関連タブから同一物件の入替レコードを確認します。&lt;/li&gt;&lt;li&gt;入替を進めるレコードを1本化し、不要となった解約レコードはフェーズを&quot;完了&quot;にします。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;玉突き入替&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「関連入替」項目に該当する入替入居もしくは入替退去レコードを入力してください。&lt;/li&gt;&lt;li&gt;入替入居レコードの矢羽や進捗管理項目が更新されると入替退去レコードの該当項目も更新されます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;申請内容自動確認&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;申請された内容で、入居者・取引先・物件がSFに登録されている情報と一致するか自動で判別し、違った場合はアラートToDoが作成されます。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;解約切り替え&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上の「解約に切り替え」ボタンをクリックしてください。&lt;/li&gt;&lt;li&gt;入替レコードがクローズされ、解約申入レコードが作成されます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;チェックリスト送付&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;入替作成時、チェックリストを送付する企業で、ポータルを利用していた場合、チェックリストレコードが自動で作成されます。&lt;/li&gt;&lt;li&gt;「チェックリストURL」にチェックリストレコードへアクセスできるURLが添付されるので、Chatterやメールでの連絡で利用してください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;入替チェック&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上の「入替チェック作成」から入替チェックレコードを作成してください。&lt;/li&gt;&lt;li&gt;入替チェックレコードで、入替レコードのチェックを行います。&lt;/li&gt;&lt;li&gt;必須管理項目は、「必須管理項目」リストを確認し、作業が完了したら「担当確認」にチェックを入れてください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;入居者登録/入居者登録解除&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;手動変更が必要な企業は、画面右上の「入居者登録」もしくは「入居者登録解除」をクリックしてください。&lt;/li&gt;&lt;li&gt;自動変更が可能な企業は、退去予定日もしくは入居予定日を迎えたタイミングで、物件の「入居者」項目が更新されます。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;退職者リスト督促可否判断&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;退職予定者リストビュー画面からインポートウィザードを起動し、退職者リストをインポートします。&lt;/li&gt;&lt;li&gt;インポート後、社宅利用者のみ解約申入レコードもしくは入替レコードが作成されるので、各レコードリストビュー画面の退職者_○○○○リストで確認してください。&lt;/li&gt;&lt;li&gt;退職者_督促可否確認リストで督促を行うか判断し、督促する場合は画面右上の「退去申請督促」ボタンをクリックします。&lt;/li&gt;&lt;li&gt;画面の案内に沿って督促を行ってください。Chatterもしくはメールで入居者に対し督促が送られます。&lt;/li&gt;&lt;/ol&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>入替</header>
+        <isPublished>true</isPublished>
+        <masterLabel>入替</masterLabel>
+        <publishedDate>2022-06-27</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-27</startDate>
+        <targetPageKey1>Change__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>入替業務</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

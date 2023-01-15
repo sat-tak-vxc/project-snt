@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuildingMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>建て方</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>木造</fullName>
+                <default>false</default>
+                <label>木造</label>
+            </value>
+            <value>
+                <fullName>鉄骨造</fullName>
+                <default>false</default>
+                <label>鉄骨造</label>
+            </value>
+            <value>
+                <fullName>鉄筋コンクリート造</fullName>
+                <default>false</default>
+                <label>鉄筋コンクリート造</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

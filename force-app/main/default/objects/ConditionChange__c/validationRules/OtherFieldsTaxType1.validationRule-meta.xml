@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherFieldsTaxType1</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( NewOtherAmount1__c )) , ISBLANK( TEXT( OtherFieldsTaxType1__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>OtherFieldsTaxType1__c</errorDisplayField>
+    <errorMessage>新その他1_税区分を入力してください</errorMessage>
+</ValidationRule>

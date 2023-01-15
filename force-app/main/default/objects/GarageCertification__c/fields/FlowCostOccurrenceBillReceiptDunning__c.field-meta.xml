@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FlowCostOccurrenceBillReceiptDunning__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISNULL(  BillReceiptDate__c ) &amp;&amp; (CreatedDate &lt; DATETIMEVALUE( TODAY() -2))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>フロー_発生費用の請求書督促</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

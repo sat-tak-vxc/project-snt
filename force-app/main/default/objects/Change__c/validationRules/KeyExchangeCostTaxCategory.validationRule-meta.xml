@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KeyExchangeCostTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( KeyExchangeCost__c )) , ISBLANK( TEXT( KeyExchangeCostTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>KeyExchangeCostTaxCategory__c</errorDisplayField>
+    <errorMessage>鍵交換費用税区分を入力してください</errorMessage>
+</ValidationRule>

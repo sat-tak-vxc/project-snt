@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AlreadyDecisionAcquisition</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>ResidentName__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>MoveScheduledDate__c</columns>
+    <columns>DecisionAcquisitionDate__c</columns>
+    <columns>ContractMoneyRemittanceDate__c</columns>
+    <columns>CancelDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DecisionAcquisitionDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>CancelDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>05_決裁取得済み</label>
+</ListView>

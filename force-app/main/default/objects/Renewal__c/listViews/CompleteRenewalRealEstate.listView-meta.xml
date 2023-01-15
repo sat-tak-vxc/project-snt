@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompleteRenewalRealEstate</fullName>
+    <columns>NAME</columns>
+    <columns>RealEstate__c</columns>
+    <columns>ContractExpirationDate__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Stage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>notEqual</operation>
+        <value>完了</value>
+    </filters>
+    <label>完了した更新手続き(不動産会社)</label>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>借主控えの回収管理(更新業務)</name>
+    <style>none</style>
+    <subject>更新契約書類ご返送のお願い/日本社宅サービス(株)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

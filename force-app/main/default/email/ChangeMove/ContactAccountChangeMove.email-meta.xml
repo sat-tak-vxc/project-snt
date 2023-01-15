@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>SNTで決裁を承認した旨を企業に連絡する。</description>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>企業へ連絡(入替業務_入居)</name>
+    <style>none</style>
+    <subject>【ご報告/決裁済】入居者変更費用決裁申請書送信の件</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

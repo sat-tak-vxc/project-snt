@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelGuidance</fullName>
+    <columns>NAME</columns>
+    <columns>RealEstate__c</columns>
+    <columns>IsLeaveGuidance__c</columns>
+    <columns>LeaveGuidanceDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>確認書</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cancel__c.Cancel</value>
+    </filters>
+    <filters>
+        <field>LeaveGuidanceDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>退去案内対象一覧</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>解約申入業務</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;進捗管理項目の登録&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;進捗管理タブの日付項目に日付を入力してください。&lt;/li&gt;&lt;li&gt;自動で入力者が右の項目に入力され、活動レコードが作成されます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;解約保留/A+K確認関連する業務レコードの確認&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;保留/退職者リストタブから解約保留時の情報を確認してください。&lt;/li&gt;&lt;li&gt;「解約保留解除通知対象」にチェックが入っている場合は、毎日9時ごろにChatterもしくはメールで入居者に対し自動通知されます。&lt;/li&gt;&lt;li&gt;「解約保留解除通知対象」にチェックは確定予定日の前日の場合に入ります。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;同一物件に対する解約の確認&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右の関連タブから同一物件の解約申入レコードを確認します。&lt;/li&gt;&lt;li&gt;解約を進めるレコードを1本化し、不要となった解約レコードはフェーズを&quot;完了&quot;にします。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;自動解約申入確認&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;解約申入タブ内の申請内容タブの項目「自動解約申入済みフラグ」にチェックが入っている場合は自動で解約申入れが行われています。&lt;/li&gt;&lt;li&gt;自動で解約申入れが行われなかった場合、アラートToDoが発行されるため活動タブで内容を確認してください。※物件がない解約申入レコードの場合はアラートToDoは発行されないため、リストビュー「物件無し解約申入一覧」で確認してください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;申入れ窓口設定&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;解約申入レコード作成時に、法人の管理会社は自動でまd口候補押して解約申入れ窓口関連リストに登録されます。&lt;/li&gt;&lt;li&gt;管理会社以外で申入れを行う必要がある場合は解約申入れ窓口関連リストに家主レコードを登録してください。&lt;/li&gt;&lt;li&gt;解約を進める窓口が1つに決まりましたら「申入れ窓口」に窓口となる家主レコードを登録してください。&lt;/li&gt;&lt;li&gt;自動で「申入れ窓口」に登録された窓口の電話番号等連絡先が解約条件登録タブで確認できます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;手動解約申入れ&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;画面右上の解約申入ボタンをクリックしてください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;家賃送金の停止&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;解約申入タブ内の解約条件登録タブの「最終支払年」と「最終支払月」に値を入力してください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;確認書督促&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;手動督促は活動に登録してください。&lt;/li&gt;&lt;li&gt;自動で督促を送る場合は「確認書自動督促送信フラグ」にチェックを入れてください。チェックをいれると翌15時45分ごろに自動でChatterもしくはメールで督促通知が申入れ窓口に対して送られます。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;確認書登録&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;解約申入タブ内の解約条件登録タブに確認書に記載されている情報を登録してください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;解約申入チェック&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;解約条件登録タブの以下項目は契約内容と齟齬がないか自動でチェックしています。チェック結果は案件チェックタブを確認してください。&lt;/li&gt;&lt;li&gt;NGがある場合は物件レコードを確認し、窓口と調整を行ってください。&lt;/li&gt;&lt;li&gt;必須管理項目リストで、必須管理項目の確認を行ってください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;退去案内&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;手動で退去案内を行う場合は、画面右のメールタブもしくはChatterタブで行ってください。&lt;/li&gt;&lt;li&gt;自動で行う場合は、矢羽を退去案内まで進め、退去案内タブの「退去案内送信」にチェックを入れてください。翌18時ごろにChatterもしくはメールで案内通知が入居者に送られます。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;立会日調整&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;立会日の調整が発生した場合は、調整内容を活動に登録してください。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;退去日変更/キャンセル管理&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;退去日変更/キャンセルが発生した場合は、変更管理リストからレコードを作成し進捗を管理してください。&lt;/li&gt;&lt;li&gt;最終家賃負担日や最終支払年月が変更される場合は、変更管理レコード上の解約申入の詳細から値を更新してください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;退職者リスト督促可否判断&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;退職予定者リストビュー画面からインポートウィザードを起動し、退職者リストをインポートします。&lt;/li&gt;&lt;li&gt;インポート後、社宅利用者のみ解約申入レコードもしくは入替レコードが作成されるので、各レコードリストビュー画面の退職者_○○○○リストで確認してください。&lt;/li&gt;&lt;li&gt;退職者_督促可否確認リストで督促を行うか判断し、督促する場合は画面右上の「退去申請督促」ボタンをクリックします。&lt;/li&gt;&lt;li&gt;画面の案内に沿って督促を行ってください。Chatterもしくはメールで入居者に対し督促が送られます。&lt;/li&gt;&lt;/ol&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>解約申入業務</header>
+        <isPublished>true</isPublished>
+        <masterLabel>解約申入業務</masterLabel>
+        <publishedDate>2022-06-14</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-14</startDate>
+        <targetPageKey1>Cancel__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>30</timesToDisplay>
+        <title>解約申入業務</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

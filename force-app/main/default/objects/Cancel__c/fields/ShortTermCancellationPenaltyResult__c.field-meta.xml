@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShortTermCancellationPenaltyResult__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(LastRentDefraymentDate__c &lt; RealEstate__r.ActualMoveDate__c, LastRentDefraymentDate__c  &gt;= RealEstate__r.ActualMoveDate__c + 1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>短期解約違約金結果</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

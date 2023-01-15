@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>更新捺印申請チーム</name>
+    <queueSobject>
+        <sobjectType>SealApplication__c</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Seal__c</sobjectType>
+    </queueSobject>
+</Queue>

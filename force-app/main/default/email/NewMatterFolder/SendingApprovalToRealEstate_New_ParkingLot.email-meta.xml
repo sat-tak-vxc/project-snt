@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>不動産へ承認連絡送付（駐車場用）</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>不動産宛承認連絡送付(新規_駐車場用)</name>
+    <style>none</style>
+    <subject>決裁取得のご連絡（日本社宅サービス）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

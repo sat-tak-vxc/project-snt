@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PenaltySynthesis1__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(TEXT(PenaltyTermStart1__c), &quot;-&quot;, &quot;/&quot;) &amp; 
+&quot;～&quot; &amp;  
+IF(
+ IF(
+  AND(MONTH(PenaltyTermStart1__c) = 2,DAY(PenaltyTermStart1__c) = 29),
+  DATE(YEAR(PenaltyTermStart1__c)+1,3,1),
+  DATE(YEAR(PenaltyTermStart1__c)+1,MONTH(PenaltyTermStart1__c),DAY(PenaltyTermStart1__c))
+  )
+ &gt;PenaltyTermEnd1__c,&quot;1年未満&quot;,&quot;1年以上&quot;) &amp; 
+&quot;：賃料の&quot;&amp;  
+IF(PenaltyCost1__c/Rent__c&gt;=1,TEXT(round(PenaltyCost1__c/Rent__c,1)),&quot;0&quot;+TEXT(round(PenaltyCost1__c/Rent__c,1))) &amp;
+&quot;カ月分&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>違約金1（合成）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

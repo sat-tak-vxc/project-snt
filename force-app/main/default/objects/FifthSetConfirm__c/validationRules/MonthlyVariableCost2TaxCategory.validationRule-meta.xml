@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MonthlyVariableCost2TaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISBLANK( MonthlyVariableCost2Title__c )) , ISBLANK( TEXT( MonthlyVariableCost2TaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>MonthlyVariableCost2TaxCategory__c</errorDisplayField>
+    <errorMessage>月次変動費2税区分を入力してください</errorMessage>
+</ValidationRule>

@@ -1,0 +1,151 @@
+<template>
+
+    <lightning-card
+        title="検索"
+        icon-name="standard:search">
+        <!-- アクション -->
+        <div slot="actions">
+            <lightning-button
+                type="submit"
+                icon-name="utility:search"
+                icon-position="left"
+                variant="brand"
+                label="検索"
+                onclick={hundleOnclickButtonSearch}
+                class="slds-var-m-horizontal_small"
+                >
+            </lightning-button>
+        </div>
+
+        <div class="slds-var-m-left_large slds-var-m-bottom_small slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+                <lightning-input
+                    type="search"
+                    name="employee_number"
+                    label="従業員番号"
+                    placeholder=""
+                    autocomplete="off"
+                    min-length="2"
+                    class="slds-var-m-horizontal_small"
+                    value={searchEmployeeNumberValue}
+                    onblur={handleOnblurSearchEmployeeNumber}
+                    >
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+                <lightning-input
+                    type="search"
+                    name="user_name"
+                    label="氏名"
+                    placeholder=""
+                    autocomplete="off"
+                    class="slds-var-m-horizontal_small"
+                    value={searchUserNameValue}
+                    onblur={handleOnblurSearchUserName}
+                    >
+                </lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+
+                <lightning-combobox
+                    name="department"
+                    label="セクション"
+                    value={sectionComboboxValue}
+                    placeholder="セクションを選択"
+                    options={sectionComboboxOptions}
+                    onchange={handleOnchangeSearchConditionSectionCombobox}
+                    class="slds-var-m-horizontal_small"
+                    >
+                </lightning-combobox>
+            </div>
+        </div>
+        <div class="slds-var-m-left_large slds-var-m-bottom_small slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+                <lightning-combobox
+                    name="mailTemplate"
+                    label="勤務形態"
+                    value={workStyleComboboxValue}
+                    placeholder="出社／在宅を選択"
+                    options={workStyleComboboxOptions}
+                    onchange={handleOnchangeSearchConditionWorkStyleCombobox}
+                    class="slds-var-m-horizontal_small"
+                >
+                </lightning-combobox>
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+            </div>
+            <div class="slds-col slds-size_1-of-3 slds-small-size_1-of-1 slds-medium-size_1-of-3 slds-large-size_1-of-3">
+            </div>
+        </div>
+
+
+    </lightning-card>
+
+    <template if:true={isSearchResultDisp}>
+        <lightning-card
+            title={searchResultCount} 
+            icon-name="standard:contact_list">
+            <!-- アクション -->
+            <div slot="actions">
+                <lightning-button
+                    type="submit"
+                    icon-position="left"
+                    variant="brand"
+                    label="出社／在宅切り替え"
+                    onclick={hundleOnclickButton}
+                    class="slds-var-m-horizontal_small"
+                    disabled={isDisabledButton}
+                >
+                </lightning-button>
+            </div>
+            <div ></div>
+            <div style="height: 450px; margin-bottom:1rem;">
+                <lightning-datatable
+                        key-field="id"
+                        data={userData}
+                        columns={userColumns}
+                        onrowselection={handleOnrowselection}
+                        default-sort-direction={defaultSortDirection}
+                        sorted-direction={sortDirection}
+                        sorted-by={sortedBy}
+                        onsort={onHandleSort}
+                        >
+                </lightning-datatable>
+            </div>    
+        </lightning-card>
+    </template>
+
+    <template if:true={isEdit} >
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                
+                <div class="slds-modal__header">
+                    <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={hundleOnclickCancel}>
+                        <lightning-icon icon-name="utility:close"
+                            alternative-text="close"
+                            variant="inverse"
+                            size="small" ></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+
+                    <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">確認メッセージ</h1>
+                </div>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p>一覧でチェックされたユーザの勤務形態を切り替えます。</p>
+                    <!-- <p>.</p> -->
+                </div>
+                <div class="slds-modal__footer">
+                    <button class="slds-button slds-button_neutral" aria-label="Cancel and close" onclick={hundleOnclickCancel}>閉じる</button>
+                    <button class="slds-button slds-button_brand" onclick={hundleOnclickAction} >実行</button>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    </template>
+
+    <!-- ローディング -->
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading..." variant="brand"></lightning-spinner>
+    </template>
+
+</template>

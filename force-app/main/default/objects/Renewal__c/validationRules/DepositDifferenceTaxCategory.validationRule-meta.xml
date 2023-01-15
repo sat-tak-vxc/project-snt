@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DepositDifferenceTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( DepositDifference__c )) , 
+DepositDifference__c=0,
+ISBLANK( TEXT(   DepositDifferenceTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>DepositDifferenceTaxCategory__c</errorDisplayField>
+    <errorMessage>敷金差額税区分を入力してください</errorMessage>
+</ValidationRule>

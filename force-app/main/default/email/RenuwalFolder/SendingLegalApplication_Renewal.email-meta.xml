@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>企業担当者に貸主の情報を提供し、反社チェックを依頼（ポータルの場合は承認プロセスで自動実施）</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>リーガル申請送付(更新業務)</name>
+    <style>none</style>
+    <subject>【更新/報告】コンプライアンスチェックについて/日本社宅サービス(株)</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SendMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>送付方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>レターパック青</fullName>
+                <default>false</default>
+                <label>レターパック青</label>
+            </value>
+            <value>
+                <fullName>レターパック赤</fullName>
+                <default>false</default>
+                <label>レターパック赤</label>
+            </value>
+            <value>
+                <fullName>普通</fullName>
+                <default>false</default>
+                <label>普通</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

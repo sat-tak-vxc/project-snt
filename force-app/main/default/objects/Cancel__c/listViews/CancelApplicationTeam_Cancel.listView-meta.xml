@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelApplicationTeam_Cancel</fullName>
+    <filterScope>Queue</filterScope>
+    <label>解約申入チーム</label>
+    <queue>CancelApplicationTeam</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

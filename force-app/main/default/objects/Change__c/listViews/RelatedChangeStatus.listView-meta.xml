@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RelatedChangeStatus</fullName>
+    <columns>NAME</columns>
+    <columns>RelationResident__c</columns>
+    <columns>RelationMoveDate__c</columns>
+    <columns>RelationLeftEmployee__c</columns>
+    <columns>RelationLeaveDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RelatedChange__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>関連入替状況</label>
+</ListView>

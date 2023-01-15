@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyIn_Penalty1TaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>BEGINS(TEXT(   Penalty1TaxCategory__c   ) ,&quot;Ex&quot;)</errorConditionFormula>
+    <errorDisplayField>Penalty1TaxCategory__c</errorDisplayField>
+    <errorMessage>税率は、内税（税込価格）で入力してください。</errorMessage>
+</ValidationRule>

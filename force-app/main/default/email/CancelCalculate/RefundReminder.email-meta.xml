@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>敷金返金予定日を経過しても敷金が返金されない解約レコードを持つ管理会社に自動でChatterもしくはメールもしくはFAXで督促通知</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>返金督促</name>
+    <style>none</style>
+    <subject>敷金精算金口座のご案内（再）/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

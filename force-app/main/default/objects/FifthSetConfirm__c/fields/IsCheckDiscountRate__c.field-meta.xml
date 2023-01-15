@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsCheckDiscountRate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (  TotalDiscountRate__c  &lt;  TokutokuServiceApplyRate__c , &quot;得々サービスの割引率を満たせていません。&quot;, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>割引率確認</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

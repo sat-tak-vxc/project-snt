@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ConfirmDateUpdateNonEditable</fullName>
+    <active>true</active>
+    <errorConditionFormula>(!(ISBLANK(PRIORVALUE( ConfirmDate__c )))&amp;&amp;ISCHANGED(ConfirmDate__c ))</errorConditionFormula>
+    <errorMessage>確認日入力後は編集できません。</errorMessage>
+</ValidationRule>

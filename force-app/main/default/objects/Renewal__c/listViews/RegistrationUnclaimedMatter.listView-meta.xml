@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegistrationUnclaimedMatter</fullName>
+    <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Stage__c</columns>
+    <columns>ConfirmationSendDate__c</columns>
+    <columns>FirstCheckDate__c</columns>
+    <columns>RegistrationCompletionDate__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>Account__c</columns>
+    <columns>ResidentName__c</columns>
+    <columns>Staff__c</columns>
+    <columns>ChargeTeam__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ConfirmationSendDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>FirstCheckDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>RegistrationCompletionDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>登録が未完了案件</label>
+</ListView>

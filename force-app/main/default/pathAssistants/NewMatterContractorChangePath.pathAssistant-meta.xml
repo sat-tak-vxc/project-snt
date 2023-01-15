@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>NewMatter__c</entityName>
+    <fieldName>Stage__c</fieldName>
+    <masterLabel>新規/名義変更</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>OccurrenceDate__c</fieldNames>
+        <fieldNames>OwnerId</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;内容を確認し、所有者を変更してください。&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>申請待ち</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>ToTraderRequestDate__c</fieldNames>
+        <info>&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;斡旋依頼をしてください。&lt;/span&gt;&lt;/p&gt;</info>
+        <picklistValueName>選定中</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>ContractorChange</recordTypeName>
+</PathAssistant>

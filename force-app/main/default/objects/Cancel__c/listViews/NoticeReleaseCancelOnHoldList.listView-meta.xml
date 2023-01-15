@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NoticeReleaseCancelOnHoldList</fullName>
+    <columns>NAME</columns>
+    <columns>CancelOnHold__c</columns>
+    <columns>IsNoticeReleaseCancelOnHold__c</columns>
+    <columns>TemporaryDate__c</columns>
+    <columns>MoveOutScheduledDate__c</columns>
+    <columns>ExpectedOrderDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cancel__c.Cancel</value>
+    </filters>
+    <filters>
+        <field>CancelOnHold__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>IsNoticeCancelOnHoldList__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>解約保留解除通知対象一覧</label>
+</ListView>

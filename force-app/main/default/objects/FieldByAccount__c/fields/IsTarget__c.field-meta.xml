@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsTarget__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(
+ ChangeDate__c   &lt;=  TODAY(),
+ IsRealEstateRelation__c  = FALSE,
+ IsApproved__c = TRUE,
+ IsRealEstateField__c = TRUE)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>更新対象</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

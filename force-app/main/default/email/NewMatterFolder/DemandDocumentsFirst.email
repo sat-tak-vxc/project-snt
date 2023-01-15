@@ -1,0 +1,26 @@
+{!NewMatter.AgencyTraderName__c}
+{!NewMatter.AgencyStaffLastName__c} 様                             
+
+いつもお世話になっております。
+                                
+過日契約を締結させていただきました、下記物件（駐車場）の契約書類ですが、
+     
+未だ弊社に未着でございます。
+捺印等の対応がございますので、お早めに弊社までご送付いただけますようお願い申し上げます。
+※行き違いになっている場合は、何卒ご容赦ください。
+
+＜物件情報＞
+■物件（駐車場）名：{!NewMatter.DecisionRealEstateName__c}
+■部屋（区画）番号：{!NewMatter.DecisionRealEstateRoom__c}
+■借主企業名：{!NewMatter.AccountName__c}
+                               
+＜発送状況＞
+■発送予定日：
+■発送書類：
+上記記載してご返信いただけますでしょうか。
+※可能であれば、貸主様捺印後にご送付いただけますと幸いです。
+                                
+お忙しい所お手数をお掛けいたしますが、ご確認いただきますようお願い申し上げます。                
+
+
+{!NewMatter.Signature__c}

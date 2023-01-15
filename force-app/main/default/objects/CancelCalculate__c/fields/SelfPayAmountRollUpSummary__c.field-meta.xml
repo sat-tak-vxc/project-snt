@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SelfPayAmountRollUpSummary__c</fullName>
+    <externalId>false</externalId>
+    <label>入居者負担額（積み上げ集計）</label>
+    <summarizedField>CalculateDetail__c.ResidentPayAmount__c</summarizedField>
+    <summaryForeignKey>CalculateDetail__c.CancelCancelCalculate__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

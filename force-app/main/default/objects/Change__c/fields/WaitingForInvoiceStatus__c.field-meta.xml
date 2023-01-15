@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WaitingForInvoiceStatus__c</fullName>
+    <description>「請求書待ち」フェーズの子フェーズとして使用</description>
+    <externalId>false</externalId>
+    <label>請求書待ち（詳細ステータス）</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>データ処理待ち</fullName>
+                <default>false</default>
+                <label>データ処理待ち</label>
+            </value>
+            <value>
+                <fullName>完了</fullName>
+                <default>false</default>
+                <label>完了</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotChangeAfterContractDocumentScrutiny</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ NOT(ISBLANK(NewMatter__r.ContractDocumentScrutinyDate__c)), 
+OR(
+   ISNEW(),
+   ISCHANGED( Answer__c ),
+   ISCHANGED( CheckResult__c ),
+   ISCHANGED( Note__c )
+
+)
+)</errorConditionFormula>
+    <errorMessage>書類精査完了後、回答内容を変更することはできません。</errorMessage>
+</ValidationRule>

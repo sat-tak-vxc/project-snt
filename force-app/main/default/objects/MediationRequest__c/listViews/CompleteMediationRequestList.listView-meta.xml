@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompleteMediationRequestList</fullName>
+    <columns>NAME</columns>
+    <columns>NewMatterId__c</columns>
+    <columns>AccountName__c</columns>
+    <columns>EmployeeName__c</columns>
+    <columns>MediationRequestDate__c</columns>
+    <columns>FirstContactDate__c</columns>
+    <columns>RealEstateCompanyCharge__c</columns>
+    <columns>DecisionContactDate__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MediationRequestDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ContractCategory__c</field>
+        <operation>equals</operation>
+        <value>成約</value>
+    </filters>
+    <label>03_物件決定済み（成約）</label>
+</ListView>

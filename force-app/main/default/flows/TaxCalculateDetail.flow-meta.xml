@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_InputTaxRateText</name>
+        <dataType>String</dataType>
+        <expression>CASE(LEN(TEXT({!var_CalculateDetail.TaxRate__c})),
+4,RIGHT(TEXT({!var_CalculateDetail.TaxRate__c}),2),
+3,RIGHT(TEXT({!var_CalculateDetail.TaxRate__c}),1),
+&quot;0&quot;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formula_InputTaxRateValue</name>
+        <dataType>Number</dataType>
+        <expression>VALUE({!formula_InputTaxRateText})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <name>formula_TaxRate</name>
+        <dataType>Number</dataType>
+        <expression>{!var_BorrowerPay}* {!formula_InputTaxRateValue} / 100</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>CD_精算明細税額計算 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>CD_精算明細税額計算</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>update_CalculateDetail</name>
+        <label>精算明細レコード更新</label>
+        <locationX>617</locationX>
+        <locationY>193</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>var_CalculateDetail.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>BorrowerPayTax__c</field>
+            <value>
+                <elementReference>formula_TaxRate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>CalculateDetail__c</object>
+    </recordUpdates>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <start>
+        <locationX>490</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>update_CalculateDetail</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>var_BorrowerPay</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <name>var_CalculateDetail</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>CalculateDetail__c</objectType>
+    </variables>
+</Flow>

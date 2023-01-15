@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreviousGarageTaxType</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( Garage__c )) , ISBLANK( TEXT( PreviousGarageTaxType__c ) ) )</errorConditionFormula>
+    <errorDisplayField>PreviousGarageTaxType__c</errorDisplayField>
+    <errorMessage>駐車場税区分を入力してください</errorMessage>
+</ValidationRule>

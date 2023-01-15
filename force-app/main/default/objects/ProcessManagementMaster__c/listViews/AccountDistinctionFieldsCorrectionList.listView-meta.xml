@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountDistinctionFieldsCorrectionList</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>DeliveryAddressMaster__c</columns>
+    <columns>OperationCategory__c</columns>
+    <columns>OperationCategorySupplement__c</columns>
+    <columns>FormName__c</columns>
+    <columns>SendDueDate__c</columns>
+    <columns>IssueDueDate__c</columns>
+    <columns>CollectBankAccount__c</columns>
+    <columns>IsIntegration__c</columns>
+    <columns>IsInvalid__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>取引先別項目編集リスト</label>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GarageDifference__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+OR(
+ISBLANK( PreviousGarage__c ),ISBLANK( NewGarage__c )
+), null, NewGarage__c - PreviousGarage__c 
+)</formula>
+    <label>駐車場差額</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

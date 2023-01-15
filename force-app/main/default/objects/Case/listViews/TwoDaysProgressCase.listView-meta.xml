@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TwoDaysProgressCase</fullName>
+    <columns>CaseId__c</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>Receptionist__c</columns>
+    <columns>AcceptDate__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AcceptProgressDays__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>2</value>
+    </filters>
+    <filters>
+        <field>ChargeTeam__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Staff__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>受付から2日以上経過した未割当てケース</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

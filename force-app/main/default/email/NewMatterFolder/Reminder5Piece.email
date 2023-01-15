@@ -1,0 +1,25 @@
+{!NewMatter.AgencyTraderName__c} 
+{!NewMatter.AgencyStaffLastName__c} 様    
+    
+いつもお世話になっております。    
+    
+物件をご紹介いただきましてありがとうございます。    
+先日、ご依頼いたしました書類のご送付をお願いいたします。    
+期日までに送付が難しい場合は、送付可能日を記載いただき、ご返信願います。    
+    
+■新規ID：{!NewMatter.NewMatterId__c}    
+■借主企業名：{!NewMatter.AccountName__c}    
+■物件（駐車場）名：{!NewMatter.DecisionRealEstateName__c}  
+■部屋（区画）番号：{!NewMatter.DecisionRealEstateRoom__c}　号    
+    
+【不足書類】    
+○○○
+   
+【返送期日】    
+***    
+    
+何卒よろしくお願い申し上げます。    
+    
+    
+
+{!NewMatter.Signature__c}

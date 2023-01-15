@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DailyRateRentDifferenceTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL ( DailyRateRentDifference__c )) , 
+DailyRateRentDifference__c=0,
+ISBLANK( TEXT( DailyRateRentDifferenceTaxCategory__c ) ) )</errorConditionFormula>
+    <errorDisplayField>DailyRateRentDifferenceTaxCategory__c</errorDisplayField>
+    <errorMessage>日割家賃差額税区分を入力してください</errorMessage>
+</ValidationRule>

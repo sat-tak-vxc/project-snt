@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-2022-JP</encodingKey>
+    <name>解約保留期限通知メール</name>
+    <relatedEntityType>Cancel__c</relatedEntityType>
+    <style>none</style>
+    <subject>解約保留期限通知</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

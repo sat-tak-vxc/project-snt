@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>部屋</fullName>
+        <default>false</default>
+        <label>部屋</label>
+    </customValue>
+    <customValue>
+        <fullName>駐車場</fullName>
+        <default>false</default>
+        <label>駐車場</label>
+    </customValue>
+    <customValue>
+        <fullName>事務所</fullName>
+        <default>false</default>
+        <label>事務所</label>
+    </customValue>
+    <customValue>
+        <fullName>土地</fullName>
+        <default>false</default>
+        <label>土地</label>
+    </customValue>
+    <customValue>
+        <fullName>物件</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>物件</label>
+    </customValue>
+    <masterLabel>社宅区分</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsStorageReminderTarget__c</fullName>
+    <externalId>false</externalId>
+    <formula>AND(ISNULL( CollectDate__c ) , NOT(ISNULL( AcceptDate__c )) , CollectScheduledDate__c &lt;TODAY() , IF( Seal__r.RecordType.Name =&quot;更新&quot;,Seal__r.Renewal__r.IsRenewalCounterAutoNotice__c  = false, Seal__r.New__r.IsAgencyAutoNotice__c = false))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>保管督促対象</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

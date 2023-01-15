@@ -1,0 +1,18 @@
+{!ConditionChange.AccountName__c}
+{!ConditionChange.CorporateHousingStaffName__c} 様
+    
+    
+いつも大変お世話になっております。    
+日本社宅サービス（株）でございます。    
+    
+条件変更手続きを進めております下記社員様の    
+コンプライアンスチェックについて、ご報告でございます。    
+    
+■社員番号：{!ConditionChange.EmployeeNumber__c}
+■社員様名：{!ConditionChange.ResidentName__c}　様    
+    
+貸主法人が該当いたしましたので、添付の通りご報告いたします。    
+    
+お手数ですがご確認の上、ご返信のほど宜しくお願いいたします。    
+    
+{!ConditionChange.Signature__c}

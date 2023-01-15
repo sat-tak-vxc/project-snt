@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>LeftEmployee__c</field>
+        <formula>Case.RealEstate__r.ContractorName__c</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>RealEstate__c</field>
+        <formula>Case.RealEstate__c</formula>
+    </fieldOverrides>
+    <label>入替（退去）作成</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>RealEstate__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>LeftEmployee__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Change__c</targetObject>
+    <targetParentField>Case__c</targetParentField>
+    <targetRecordType>Change__c.Leave</targetRecordType>
+    <type>Create</type>
+</QuickAction>

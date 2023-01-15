@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewMatterRecordNoneCreate</fullName>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Application__c.MoveIn,Application__c.Move</value>
+    </filters>
+    <filters>
+        <field>NewMatterNotCreated__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>承認済み</value>
+    </filters>
+    <label>新規レコード未作成の入居申請/転居申請</label>
+</ListView>

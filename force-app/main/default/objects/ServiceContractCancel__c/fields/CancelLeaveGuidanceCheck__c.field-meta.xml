@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelLeaveGuidanceCheck__c</fullName>
+    <externalId>false</externalId>
+    <label>解約退去案内チェック</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>メール</fullName>
+                <default>false</default>
+                <label>メール</label>
+            </value>
+            <value>
+                <fullName>郵送</fullName>
+                <default>false</default>
+                <label>郵送</label>
+            </value>
+            <value>
+                <fullName>不要</fullName>
+                <default>false</default>
+                <label>不要</label>
+            </value>
+            <value>
+                <fullName>個別</fullName>
+                <default>false</default>
+                <label>個別</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

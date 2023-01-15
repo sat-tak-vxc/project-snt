@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancel__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>解約</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>該当する解約れこーっどが存在しないか、物件が一致する解約レコードではありません。正しい解約レコードを入力してください。</errorMessage>
+        <filterItems>
+            <field>$Source.RealEstate__c</field>
+            <operation>equals</operation>
+            <valueField>Cancel__c.RealEstate__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Cancel__c</referenceTo>
+    <relationshipLabel>解約申入れ窓口</relationshipLabel>
+    <relationshipName>Cancel</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

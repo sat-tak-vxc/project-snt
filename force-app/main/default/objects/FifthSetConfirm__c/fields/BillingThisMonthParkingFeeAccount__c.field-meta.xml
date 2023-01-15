@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingThisMonthParkingFeeAccount__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>請求当月駐車場_送金先口座</label>
+    <referenceTo>BankAccount__c</referenceTo>
+    <relationshipLabel>5点確定 (請求当月駐車場代_送金先口座)</relationshipLabel>
+    <relationshipName>FifthSetConfirmBankAccountRelation8</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

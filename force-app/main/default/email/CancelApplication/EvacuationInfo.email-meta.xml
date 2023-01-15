@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>解約レコードが一定の条件を満たしたら退去案内通知対象となる社員に自動で退去案内を送信</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>退去案内</name>
+    <style>none</style>
+    <subject>社宅退去手続きのご案内/日本社宅サービス株式会社</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

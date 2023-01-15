@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsNotAutoReminder__c</fullName>
+    <externalId>false</externalId>
+    <formula>SealApplication__r.IsNotAutoReminder__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>自動督促不可</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

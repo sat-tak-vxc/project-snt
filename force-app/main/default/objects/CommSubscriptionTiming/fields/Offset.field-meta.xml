@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Offset</fullName>
+    <inlineHelpText>連絡先とコミュニケーションを取るべきイベント前後の時間または特定の曜日。[単位] で時間を設定します。たとえば、[単位] を [週]、[オフセット] を [-4] として設定すると、イベントの 4 週間前に連絡先とコミュニケーションを取ります。たとえば、[オフセット] を [4] として設定すると、イベントの 4 週間後に連絡先とコミュニケーションを取ります。たとえば、[単位] を [曜日]、[オフセット] を [1] として設定すると、月曜日に連絡先とコミュニケーションを取ります。たとえば、[オフセット] を [7] として設定すると、日曜日に連絡先とコミュニケーションを取ります。</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

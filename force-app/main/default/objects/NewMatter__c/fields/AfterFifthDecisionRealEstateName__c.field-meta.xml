@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AfterFifthDecisionRealEstateName__c</fullName>
+    <externalId>false</externalId>
+    <formula>FifthSetConfirm__r.RealEstateName__c</formula>
+    <label>5点確認後決定物件名</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

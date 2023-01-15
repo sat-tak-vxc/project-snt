@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>見込み有り</fullName>
+        <default>false</default>
+        <label>見込み有り</label>
+    </standardValue>
+    <standardValue>
+        <fullName>将来的に見込み有り</fullName>
+        <default>false</default>
+        <label>将来的に見込み有り</label>
+    </standardValue>
+    <standardValue>
+        <fullName>見込み無し</fullName>
+        <default>false</default>
+        <label>見込み無し</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hot</fullName>
+        <default>false</default>
+        <label>Hot</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Warm</fullName>
+        <default>false</default>
+        <label>Warm</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Cold</fullName>
+        <default>false</default>
+        <label>Cold</label>
+        <isActive>false</isActive>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentOrBillingCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>支払/請求区分</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>支払/請求</fullName>
+                <default>false</default>
+                <label>支払/請求</label>
+            </value>
+            <value>
+                <fullName>請求</fullName>
+                <default>false</default>
+                <label>請求</label>
+            </value>
+            <value>
+                <fullName>支払</fullName>
+                <default>false</default>
+                <label>支払</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

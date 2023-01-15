@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewMatterReconfirmRequestTeamProgression</fullName>
+    <booleanFilter>(1 AND 2) AND (3 OR (4 AND 5))</booleanFilter>
+    <columns>NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ReconfirmTeam__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ReconfirmRequestDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ReconfirmDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ReconfirmDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>DecisionApplicationDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>再査担当チームリストビュー(進行中)</label>
+</ListView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UpdateSourceApplication__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>情報更新元申請</label>
+    <referenceTo>Application__c</referenceTo>
+    <relationshipLabel>取引先担当者</relationshipLabel>
+    <relationshipName>UpdateSourceApplication</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

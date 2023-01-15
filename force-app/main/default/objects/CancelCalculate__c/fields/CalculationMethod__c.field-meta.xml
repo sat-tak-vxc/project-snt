@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CalculationMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>請求賃料計算方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>切り捨て</fullName>
+                <default>false</default>
+                <label>切り捨て</label>
+            </value>
+            <value>
+                <fullName>切り上げ</fullName>
+                <default>false</default>
+                <label>切り上げ</label>
+            </value>
+            <value>
+                <fullName>四捨五入</fullName>
+                <default>false</default>
+                <label>四捨五入</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

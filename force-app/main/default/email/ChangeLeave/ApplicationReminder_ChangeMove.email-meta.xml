@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>退職者リストの対象者に対し、1回目以降の申請依頼後退去申請が行われておらず手動督促が必要な取引先責任者（社員）に申請督促</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>申請督促</name>
+    <style>none</style>
+    <subject>【再送】社宅退去申請のご案内/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

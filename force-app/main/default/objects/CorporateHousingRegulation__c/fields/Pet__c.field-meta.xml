@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pet__c</fullName>
+    <externalId>false</externalId>
+    <label>ペット条件</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ペット飼育可（個人負担）</fullName>
+                <default>false</default>
+                <label>ペット飼育可（個人負担）</label>
+            </value>
+            <value>
+                <fullName>ペット飼育可（会社負担）</fullName>
+                <default>false</default>
+                <label>ペット飼育可（会社負担）</label>
+            </value>
+            <value>
+                <fullName>ペット飼育不可</fullName>
+                <default>false</default>
+                <label>ペット飼育不可</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

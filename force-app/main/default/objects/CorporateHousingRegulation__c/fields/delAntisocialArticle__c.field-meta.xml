@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>delAntisocialArticle__c</fullName>
+    <externalId>false</externalId>
+    <label>(削除)反社条文</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>対応不要</fullName>
+                <default>false</default>
+                <label>対応不要</label>
+            </value>
+            <value>
+                <fullName>対応必要</fullName>
+                <default>false</default>
+                <label>対応必要</label>
+            </value>
+            <value>
+                <fullName>対応必要（企業指定覚書必須）</fullName>
+                <default>false</default>
+                <label>対応必要（企業指定覚書必須）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

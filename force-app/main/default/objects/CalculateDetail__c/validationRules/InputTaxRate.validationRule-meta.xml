@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InputTaxRate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(AND( NOT( ISNULL( Quantity__c ) ) , NOT( ISNULL( UnitPrice__c ) ) )  ,ISBLANK( TEXT(   TaxRate__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>TaxRate__c</errorDisplayField>
+    <errorMessage>税率（％）を入力してください</errorMessage>
+</ValidationRule>

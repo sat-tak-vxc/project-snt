@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ArrangeManagementChargeTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL(  ArrangeManagementCharge__c   )) , ISBLANK( TEXT(   ArrangeManagementChargeTaxCategory__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>ArrangeManagementChargeTaxCategory__c</errorDisplayField>
+    <errorMessage>清掃・修繕業務手配管理費税区分を入力してください</errorMessage>
+</ValidationRule>

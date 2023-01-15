@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LenderPayTa10SubTotal__c</fullName>
+    <externalId>false</externalId>
+    <label>貸主負担合計額消費税10%集計</label>
+    <summarizedField>CalculateDetail__c.DeleateLenderPay__c</summarizedField>
+    <summaryFilterItems>
+        <field>CalculateDetail__c.TaxRate2__c</field>
+        <operation>equals</operation>
+        <value>10</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CalculateDetail__c.CancelCancelCalculate__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

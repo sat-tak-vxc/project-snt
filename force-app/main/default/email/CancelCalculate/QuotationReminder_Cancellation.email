@@ -1,0 +1,20 @@
+{!CancelCalculate.CalculateCounterName__c}
+{!CancelCalculate.CalculateCounterStaffLastName__c} 様
+
+いつもお世話になっております。
+
+下記物件（駐車場）退去に伴いまして、「敷金精算に係わる原状回復費のお見積書」
+のご返送をご依頼させていただきましたが、現在のところまだ確認ができておりません。
+恐れ入りますが、下記期日までに「お見積書」または「精算書」をご提出くださいますようお願い申し上げます。
+（既にご返送いただいており、行き違いの場合はご容赦ください）
+
+貴社ご返信の内容を確認のうえ、改めて弊社担当よりご連絡させていただきます。
+
+■物件（駐車場）名：{!CancelCalculate.RealEstateName__c}
+■部屋（区画）番号：{!CancelCalculate.RoomName__c}号
+■借主企業名：{!CancelCalculate.AccountName__c}
+
+お忙しい中お手数をお掛けいたしますが、何卒よろしくお願い申し上げます。
+
+
+{!CancelCalculate.Signature__c}

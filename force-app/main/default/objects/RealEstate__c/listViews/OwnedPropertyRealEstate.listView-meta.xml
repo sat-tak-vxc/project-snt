@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OwnedPropertyRealEstate</fullName>
+    <columns>NAME</columns>
+    <columns>ContractorName__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ListViewRealEstate__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>自社所有物件(不動産会社)</label>
+</ListView>

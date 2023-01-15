@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewRentTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( NewRent__c )) ,
+ISBLANK( TEXT(  NewRentTaxCategory__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>NewRentTaxCategory__c</errorDisplayField>
+    <errorMessage>新家賃税区分を入力してください。</errorMessage>
+</ValidationRule>

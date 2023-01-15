@@ -1,0 +1,30 @@
+{
+  "orgName": "SNT",
+  "sourceOrg": "00D5h0000029Fh5",
+  "settings": {
+    "enhancedNotesSettings": {
+      "enableEnhancedNotes": true
+    },
+    "CommunitiesSettings":{
+      "enableNetworksEnabled":true
+    },
+    "ExperienceBundleSettings":{
+      "enableExperienceBundleMetadata":true
+    },
+    "KnowledgeSettings":{
+      "enableLightningKnowledge":true,
+      "showValidationStatusField":true
+    },
+    "EinsteinAgentSettings":{
+      "einsteinAgentRecommendations":true
+    },
+    "CaseSettings":{
+      "enableEscalateQfiToCaseInternal":true
+    },
+    "SecuritySettings":{
+      "singleSignOnSettings":{
+        "enableSamlLogin":true
+      }
+    }
+  }
+}

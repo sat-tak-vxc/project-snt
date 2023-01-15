@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Field145</label>
+    <protected>false</protected>
+    <values>
+        <field>FieldsName__c</field>
+        <value xsi:type="xsd:string">家主4_TEL</value>
+    </values>
+    <values>
+        <field>IsBill__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>IsContract__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>IsDrawing__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>IsImportantExplanation__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>ReferenceName__c</field>
+        <value xsi:type="xsd:string">OwnerPhone4</value>
+    </values>
+    <values>
+        <field>RowNum__c</field>
+        <value xsi:type="xsd:double">145.0</value>
+    </values>
+</CustomMetadata>

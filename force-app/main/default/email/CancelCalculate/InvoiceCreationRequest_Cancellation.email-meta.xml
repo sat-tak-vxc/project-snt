@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>決裁が承認され、顧客企業に請求が必要な場合、不動産会社に請求書の作成を自動で依頼</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>請求書作成依頼(解約業務)</name>
+    <style>none</style>
+    <subject>精算合意のご案内/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

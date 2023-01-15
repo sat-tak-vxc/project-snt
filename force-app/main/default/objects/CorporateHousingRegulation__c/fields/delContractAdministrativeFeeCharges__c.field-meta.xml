@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>delContractAdministrativeFeeCharges__c</fullName>
+    <externalId>false</externalId>
+    <label>(削除)契約事務手数料</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>発生ＯＫ</fullName>
+                <default>false</default>
+                <label>発生ＯＫ</label>
+            </value>
+            <value>
+                <fullName>発生ＮＧ</fullName>
+                <default>false</default>
+                <label>発生ＮＧ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

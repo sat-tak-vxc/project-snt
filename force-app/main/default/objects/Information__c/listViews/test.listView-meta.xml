@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test</fullName>
+    <booleanFilter>1 OR (2 AND 3)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>PublishStartDate__c</columns>
+    <columns>PublishEndDate__c</columns>
+    <columns>AlwaysPublish__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>AlwaysPublish__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PublishStart__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PublishEnd__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>お知らせ</label>
+</ListView>

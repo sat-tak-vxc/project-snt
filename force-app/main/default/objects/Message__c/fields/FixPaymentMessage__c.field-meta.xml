@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FixPaymentMessage__c</fullName>
+    <description>車庫証明で決裁申請時に駐車場代の前納が起こる場合、家賃を止める必要があるが、支払レコードが月初めに既に作成されている場合は修正依頼を送る必要がある</description>
+    <externalId>false</externalId>
+    <label>家賃支払いレコード修正依頼メッセージ</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

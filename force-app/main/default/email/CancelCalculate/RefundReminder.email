@@ -1,0 +1,32 @@
+{!CancelCalculate.CalculateCounterName__c}
+{!CancelCalculate.CalculateCounterStaffLastName__c} 様
+
+いつもお世話になっております。
+日本社宅サービス(株)でございます。
+
+下記物件（駐車場）の賃貸借契約解約に伴う精算額合意および敷金返金口座のご案内と
+当社の返金希望日についてお伝えさせていただきましたが、
+本日現在でまだ入金の確認ができておりません。
+
+つきましては、状況およびご予定の再確認をさせていただきたく、
+お手数ですが返金予定等についてご返信いただけますようお願い申し上げます。
+
+なお、行き違いで既にご送金いただいている場合は、不躾なご連絡を差し上げましたこと、
+ご容赦くださいますようお願い申し上げます。
+
+■対象物件（駐車場）：{!CancelCalculate.RealEstateName__c}
+■号室（区画番号）：{!CancelCalculate.RoomName__c}
+■返金合計額：{!CancelCalculate.CalculateConfirmationRefundTotal__c} 円
+■返金希望日：{!CancelCalculate.DepositRefundScheduledDate__c}
+■返金先口座：{!CancelCalculate.CancelVirtualCollectBankName__c} {!CancelCalculate.CancelVirtualCollectBranchName__c} {!CancelCalculate.CancelVirtualCollectBankAccountType__c} {!CancelCalculate.CancelVirtualCollectBankAccountNum__c} {!CancelCalculate.CancelVirtualCollectBankAccountName__c} {!CancelCalculate.CancelVirtualCollectBankAccountNameKana__c}
+■連絡事項：{!CancelCalculate.TraderContactMatter__c}
+
+
+＜ご返金予定日＞
+※予定日を記載願います。
+※名義が貴社もしくは家主様以外になる場合は名義人名をお知らせください。
+
+お忙しい中お手数をお掛けいたしますが、何卒よろしくお願い申し上げます。
+
+
+{!CancelCalculate.Signature__c}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AntisocialReportMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>反社報告方法</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>メール</fullName>
+                <default>false</default>
+                <label>メール</label>
+            </value>
+            <value>
+                <fullName>FAX</fullName>
+                <default>false</default>
+                <label>FAX</label>
+            </value>
+            <value>
+                <fullName>両方</fullName>
+                <default>false</default>
+                <label>両方</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

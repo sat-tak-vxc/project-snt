@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RealEstateStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>物件ステータス</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>問題なし;問題があり</fullName>
+                <default>false</default>
+                <label>問題なし;問題があり</label>
+            </value>
+            <value>
+                <fullName>管理会社・家主へ修正依頼済み;問題はあるが修理の必要無し</fullName>
+                <default>false</default>
+                <label>管理会社・家主へ修正依頼済み;問題はあるが修理の必要無し</label>
+            </value>
+            <value>
+                <fullName>問題はあるが修理しないものと修理が必要なもの両方ある</fullName>
+                <default>false</default>
+                <label>問題はあるが修理しないものと修理が必要なもの両方ある</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

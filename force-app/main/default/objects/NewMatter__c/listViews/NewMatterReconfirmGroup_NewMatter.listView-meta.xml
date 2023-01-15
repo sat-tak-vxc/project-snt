@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewMatterReconfirmGroup_NewMatter</fullName>
+    <filterScope>Queue</filterScope>
+    <label>新規再査チーム</label>
+    <queue>NewMatterReconfirmGroup</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

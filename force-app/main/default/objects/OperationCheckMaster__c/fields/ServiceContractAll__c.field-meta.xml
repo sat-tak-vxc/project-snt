@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceContractAll__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>入力が無い場合は、全社共通のチェックとします。</inlineHelpText>
+    <label>サービス_全体</label>
+    <referenceTo>ServiceContractAll__c</referenceTo>
+    <relationshipLabel>業務チェックマスタ</relationshipLabel>
+    <relationshipName>ServiceContractAll_OC</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

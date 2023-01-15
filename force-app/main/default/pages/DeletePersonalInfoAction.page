@@ -1,0 +1,31 @@
+<apex:page >
+    <html>
+        <head>
+            <apex:includeLightning />
+        </head>
+        <body class="slds-scope">
+            <div id="flowContainer" />
+            <script>
+                $Lightning.use(
+                    // appName
+                    "c:DeletePersonalInfoApp",
+                    // callback
+                    function() {
+                        $Lightning.createComponent(
+                            // type
+                            "lightning:flow",
+                            // attributes
+                            {},
+                            // domLocator
+                            "flowContainer",
+                            // callback
+                            function (component) {
+                                component.startFlow("DeletePersonalInfo");
+                            }
+                        );
+                    }
+                );
+            </script>
+        </body>
+    </html>
+</apex:page>

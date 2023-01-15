@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>解約精算</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;進捗管理&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;進捗管理タブの日付項目に日付を入力してください。&lt;/li&gt;&lt;li&gt;自動で入力者が右の項目に入力され、活動レコードが作成されます。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;チェックリスト送付/登録&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;「解約申入」から解約申入れレコードにアクセスします。&lt;/li&gt;&lt;li&gt;解約申入レコードのファイルタブに、チェックリストを格納してください。もしくは、チェックリストレコードを確認してください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;見積督促&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;督促設定タブの「&lt;span style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;原状回復費用見積回収予定日」に入力されている日付の前日に自動で督促通知が送られます。自動通知後、&lt;/span&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;「&lt;/span&gt;&lt;span style=&quot;color: rgb(68, 68, 68); font-size: 12px;&quot;&gt;原状回復費用見積回収予定日」は通知日の5日後にセットされます。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68); font-size: 12px;&quot;&gt;通知先は「精算相手先」項目に入力されている取引先になります。&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;見積登録&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;見積書を受領したら、ファイルタブに見積書をアップロードします。&lt;/li&gt;&lt;li&gt;見積書に記載されている金額情報を精算書タブの各金額項目に入力します。以下項目は解約精算レコード作成時に、物件レコード・家賃レコードの項目から自動で値が入力されます。（「&lt;span style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;解約月預り家賃」「解約預り共益費」「敷金」「敷引/償却」）&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;概算見積書の「原状回復工事の明細」に当たる部分は、精算書タブ下部の「精算明細」の鉛筆マークをクリックし入力してください。事前に精算明細費目レコードをマスタ情報として登録しておくと、「費目」の値に精算明細費目レコードの名前を入力すれば「使用材料」や「状況」といった精算明細の項目に自動で値が入ります。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;数量と単価を入力することで、借主負担額が自動で計算されます。貸主負担が発生する場合は「借主負担」項目の金額を減額してください。減額分が「貸主負担」に反映されます。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong style=&quot;font-size: 12px; color: rgb(68, 68, 68);&quot;&gt;精算チェック&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上の「精算チェック」ボタンをクリックします。&lt;/li&gt;&lt;li&gt;ポップアップが出たら「完了」をクリックしてください。&lt;/li&gt;&lt;li&gt;精算タブ内の基本情報タブに精算チェック関連リストがあるので、そこから精算チェックレコードをクリックし自動チェック内容を確認、手動チェック対象のチェックを行ってください。&lt;/li&gt;&lt;li&gt;再査のチェックも同じ精算チェックレコードで行うようにしてください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;返金口座案内&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;画面右上の「返金口座案内」ボタンをクリックします。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;「精算窓口」に対して、返金口座案内の通知が送られます。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68);&quot;&gt;入金確認&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;解約精算リストビュー画面から「敷金が未返金な解約業務」を選択してください。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;全額入金されていない解約精算レコードが一覧に表示されるので、レコードのリンクをクリックしてください。&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;color: rgb(68, 68, 68);&quot;&gt;入金確認/請求タブの「敷金入金明細」に入金情報を入力してください。&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;敷金返金督促&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;「敷金返金予定日」の2日前で、敷金入金明細レコードが1つもない時に、自動で返金督促が「敷金返金予定者」に通知される。&lt;/li&gt;&lt;li&gt;入金済みフラグにチェックを入れることで督促を止めることができる。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>解約精算業務</header>
+        <isPublished>true</isPublished>
+        <masterLabel>解約精算</masterLabel>
+        <publishedDate>2022-07-21</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2022-07-21</startDate>
+        <targetPageKey1>CancelCalculate__c</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>1</timesToDisplay>
+        <title>解約精算業務</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

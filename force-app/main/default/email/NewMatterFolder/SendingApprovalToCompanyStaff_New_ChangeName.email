@@ -1,0 +1,27 @@
+{!NewMatter.ResidentLastName__c} 様 
+
+いつもお世話になっております。
+
+先日お申し込み頂いておりました名義変更手続きですが、
+本日ご決裁の承認を頂きましたのでご報告申し上げます。
+
+1) 概要について
+物件名称 ：{!NewMatter.DecisionRealEstateName__c}　{!NewMatter.DecisionRealEstateRoom__c} 号
+契約開始日：{!NewMatter.ContractStartDate__c}
+
+■管理会社
+{!NewMatter.ManagementTraderName__c}　　TEL：{!NewMatter.ManagementTraderPhone__c}
+※賃貸人に代わり、更新・解約の手続き、および設備修繕等入居中のトラブルに対応してくださる窓口です。
+
+
+3）その他注意事項
+{!NewMatter.DecisionAtApplicationCounter__c}
+
+※上記注意事項とあわせて、お住まい周辺の避難所の確認やハザードマップの定期的な確認を行ってくださいませ。
+
+
+ご不明な点等がございましたら、弊社までご連絡くださいますようお願い申し上げます。
+
+
+
+{!NewMatter.Signature__c}

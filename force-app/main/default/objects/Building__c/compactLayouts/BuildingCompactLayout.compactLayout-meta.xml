@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BuildingCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>BuildingId__c</fields>
+    <fields>BuildingKana__c</fields>
+    <label>棟</label>
+</CompactLayout>

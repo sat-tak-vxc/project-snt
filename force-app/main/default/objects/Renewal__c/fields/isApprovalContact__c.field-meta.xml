@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>isApprovalContact__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( AND(NOT( ISBLANK( DecisionAcquisitionDate__c ) ), (ContractExpirationDate__c -  TODAY())&lt;=  $Setup.ReminderSetting__c.ContactAfterApprovalDays__c )  , true, false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>承認連絡フラグ</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

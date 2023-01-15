@@ -1,0 +1,37 @@
+<apex:page id="loginPage"
+  showHeader="true"
+  controller="CommunitiesLoginController"
+  title="{!$Label.site.site_login}"
+  action="{!init}">
+  <body>
+    <center>
+        <apex:form id="theForm" forceSSL="true">
+        <apex:pageMessages id="error"/>
+        <apex:panelGrid columns="3" style="margin-top:1em;">
+          <apex:outputLabel value="{!$Setup.CommunitiesLogin__c.CommunityUsernameLabel__c}" for="communityUsername"/>
+          <apex:inputText required="false" id="communityUsername" value="{!communityUsername}" label="{!$Setup.CommunitiesLogin__c.CommunityUsernameLabel__c}" html-autocomplete="off"/>
+          <div rowspan="6">
+            ログイン時の注意事項をここに表示します。
+          </div>          
+          <apex:outputLabel value="{!$Setup.CommunitiesLogin__c.PasswordLabel__c}" for="password"/>
+          <apex:inputSecret required="false" id="password" value="{!password}" label="{!$Setup.CommunitiesLogin__c.PasswordLabel__c}"/>
+          <apex:outputText value=""/>
+          <apex:commandButton action="{!login}" value="{!$Label.site.login_button}" id="login"/>
+          <apex:outputText value=""/>
+          <apex:outputText value=""/>
+          <apex:outputText value=""/>
+          <apex:outputLink value="{!$Page.ForgotPassword}">
+            <apex:param name="startURL" value="{!URLENCODE($CurrentPage.parameters.startURL)}" />
+            {!$Label.site.forgot_password}
+          </apex:outputLink>
+          <apex:outputText value="" rendered="{!isRegistrationEnabled}"/>
+          <apex:outputLink value="{!$Page.CommunitiesSelfReg}" rendered="{isRegistrationEnabled}">
+            <apex:param name="startURL" value="{!URLENCODE($CurrentPage.parameters.startURL)}" />
+            <apex:param name="id" value="{!accountId}" />
+            {!$Label.site.user_registration}
+          </apex:outputLink>
+        </apex:panelGrid>
+        </apex:form>
+    </center>  
+</body>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ResidentCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>Relationship__c</fields>
+    <fields>Job__c</fields>
+    <fields>Age__c</fields>
+    <fields>Dependents__c</fields>
+    <label>入居者</label>
+</CompactLayout>

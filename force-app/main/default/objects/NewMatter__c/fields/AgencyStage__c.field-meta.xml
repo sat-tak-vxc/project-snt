@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AgencyStage__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Stage__c ,
+           &quot;申請待ち&quot;, &quot;斡旋依頼準備中&quot;,
+           &quot;申請受付&quot;, &quot;斡旋依頼準備中&quot;, 
+           &quot;申請確認中&quot;, &quot;斡旋依頼準備中&quot;,
+           &quot;物件決定待ち&quot;, &quot;斡旋中&quot;,
+           &quot;書類到着待ち&quot;, &quot;書類未提出&quot;,
+           &quot;契約内容確認中&quot;, &quot;オペレーター内容確認中&quot;,
+           &quot;再査中&quot;, &quot;オペレーター内容確認中&quot;,
+           &quot;決裁申請中&quot;, &quot;決裁申請中&quot;,
+           &quot;承認連絡準備中&quot;, &quot;承認連絡準備中&quot;,
+           &quot;書類締結中&quot;, &quot;書類締結中&quot;,
+           &quot;完了&quot;, &quot;完了&quot;, 
+           &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>フェーズ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

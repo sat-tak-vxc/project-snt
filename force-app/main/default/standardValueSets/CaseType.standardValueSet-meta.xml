@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>問題</fullName>
+        <default>false</default>
+        <label>問題</label>
+    </standardValue>
+    <standardValue>
+        <fullName>機能要求</fullName>
+        <default>false</default>
+        <label>機能要求</label>
+    </standardValue>
+    <standardValue>
+        <fullName>質問</fullName>
+        <default>false</default>
+        <label>質問</label>
+    </standardValue>
+    <standardValue>
+        <fullName>クレーム</fullName>
+        <default>false</default>
+        <label>クレーム</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sample Cases</fullName>
+        <default>false</default>
+        <label>Sample Cases</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial</fullName>
+        <default>false</default>
+        <label>Trial</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Question</fullName>
+        <default>false</default>
+        <label>Question</label>
+        <isActive>false</isActive>
+    </standardValue>
+</StandardValueSet>

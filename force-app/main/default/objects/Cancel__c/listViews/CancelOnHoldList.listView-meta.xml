@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelOnHoldList</fullName>
+    <columns>NAME</columns>
+    <columns>CancelOnHold__c</columns>
+    <columns>TemporaryDate__c</columns>
+    <columns>ExpectedOrderDate__c</columns>
+    <columns>MoveOutScheduledDate__c</columns>
+    <columns>LastRentDefraymentDate__c</columns>
+    <columns>MoveScheduledDate__c</columns>
+    <columns>ContractStartDate__c</columns>
+    <columns>DecisionRealEstateDate__c</columns>
+    <columns>NewmatterDecisionAcquisitionDate__c</columns>
+    <columns>DifferenceMoveInOutDate__c</columns>
+    <columns>DifferenceContractStartDateCancelDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CancelOnHold__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Cancel__c.Cancel</value>
+    </filters>
+    <label>解約保留案件一覧</label>
+</ListView>

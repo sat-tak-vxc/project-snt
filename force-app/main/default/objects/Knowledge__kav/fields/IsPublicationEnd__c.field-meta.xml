@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsPublicationEnd__c</fullName>
+    <externalId>false</externalId>
+    <formula>PublicationEndDate__c &lt; TODAY()</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>掲載終了</label>
+    <type>Checkbox</type>
+</CustomField>

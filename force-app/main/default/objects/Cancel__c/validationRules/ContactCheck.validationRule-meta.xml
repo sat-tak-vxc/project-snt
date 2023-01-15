@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactCheck</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   !ISBLANK(CancelCounterStaff__c) ,
+   CancelCounter__r.Account__c  &lt;&gt; CancelCounterStaff__r.AccountId
+)</errorConditionFormula>
+    <errorDisplayField>CancelCounterStaff__c</errorDisplayField>
+    <errorMessage>家主の取引先に紐づく取引先担当者を選択してください</errorMessage>
+</ValidationRule>

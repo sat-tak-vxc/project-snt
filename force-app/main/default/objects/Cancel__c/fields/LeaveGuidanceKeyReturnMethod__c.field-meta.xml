@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeaveGuidanceKeyReturnMethod__c</fullName>
+    <externalId>false</externalId>
+    <label>鍵の返却方法_その他</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>管理会社窓口に返却</fullName>
+                <default>false</default>
+                <label>管理会社窓口に返却</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

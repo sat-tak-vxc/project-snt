@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>delFireInsurance__c</fullName>
+    <externalId>false</externalId>
+    <label>(削除)火災保険</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>貸主指定必須</fullName>
+                <default>false</default>
+                <label>貸主指定必須</label>
+            </value>
+            <value>
+                <fullName>任意</fullName>
+                <default>false</default>
+                <label>任意</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

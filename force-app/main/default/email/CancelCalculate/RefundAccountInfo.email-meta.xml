@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>不動産管理会社に返金口座を案内</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>返金口座案内</name>
+    <style>none</style>
+    <subject>精算合意及び敷金返還口座のご案内/日本社宅サービス（株）</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>電話</fullName>
+        <default>true</default>
+        <label>電話</label>
+    </standardValue>
+    <standardValue>
+        <fullName>メール</fullName>
+        <default>false</default>
+        <label>メール</label>
+    </standardValue>
+    <standardValue>
+        <fullName>ポータルサイト</fullName>
+        <default>false</default>
+        <label>ポータルサイト</label>
+    </standardValue>
+    <standardValue>
+        <fullName>案件引継ぎ</fullName>
+        <default>false</default>
+        <label>案件引継ぎ</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Web</fullName>
+        <default>false</default>
+        <label>Web</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatter Answers</fullName>
+        <default>false</default>
+        <label>Chatter Answers</label>
+        <isActive>false</isActive>
+    </standardValue>
+    <standardValue>
+        <fullName>Chatter</fullName>
+        <default>false</default>
+        <label>Chatter</label>
+        <isActive>false</isActive>
+    </standardValue>
+</StandardValueSet>

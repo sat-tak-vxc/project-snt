@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompanyRule__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>ServiceContractRenewalConditionChange</inlineHelpText>
+    <label>企業ルール</label>
+    <referenceTo>ServiceContractRenewalConditionChange__c</referenceTo>
+    <relationshipLabel>更新</relationshipLabel>
+    <relationshipName>RelationRenewalServiceContractRenewal</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

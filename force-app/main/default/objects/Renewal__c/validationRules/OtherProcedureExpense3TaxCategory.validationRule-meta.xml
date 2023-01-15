@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherProcedureExpense3TaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT( ISNULL( OtherProcedureExpense3Amount__c )) , ISBLANK( TEXT(  OtherProcedureExpense3TaxCategory__c  ) ) )</errorConditionFormula>
+    <errorDisplayField>OtherProcedureExpense3TaxCategory__c</errorDisplayField>
+    <errorMessage>その他手続き費用3税区分を入力してください</errorMessage>
+</ValidationRule>

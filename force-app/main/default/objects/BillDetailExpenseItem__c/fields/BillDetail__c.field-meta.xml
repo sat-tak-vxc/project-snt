@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillDetail__c</fullName>
+    <externalId>false</externalId>
+    <label>請求明細</label>
+    <referenceTo>BillDetail__c</referenceTo>
+    <relationshipLabel>請求明細費目</relationshipLabel>
+    <relationshipName>BillDetail_ExpenseItem</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

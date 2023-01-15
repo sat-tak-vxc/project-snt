@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>申請リストビューガイダンス</masterLabel>
+    <promptVersions>
+        <body>&lt;p&gt;&lt;strong&gt;申請レコード手動作成&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;画面右上の「新規」ボタンをクリックしてください。&lt;/li&gt;&lt;li&gt;新規申請作成タブ任セインにするので、該当する申請種別を選択して「次へ」をクリックしてください。&lt;/li&gt;&lt;li&gt;必要な情報を入力して「保存」をクリックしてください。&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;リスト申請&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;リスト申請のExcelファイルをcsvファイルに変換し、「リスト申請」と名前の列を追加し値を全てTrueにします。&lt;/li&gt;&lt;li&gt;画面右上の「インポート」ボタンをクリックしてください。&lt;/li&gt;&lt;li&gt;「新規作成」をクリックしてください。クリック後出てきたメニューの「新規レコードおよび更新されたレコードにワークフロールールおよびプロセスを適用」にチェックを入れてください。&lt;/li&gt;&lt;li&gt;CSVの申請データをアップロードしてください。&lt;/li&gt;&lt;li&gt;項目の割り当てをし、取込を実行してください。&lt;/li&gt;&lt;/ol&gt;</body>
+        <customApplication>Syatakusan</customApplication>
+        <delayDays>1</delayDays>
+        <displayType>DockedComposer</displayType>
+        <header>申請受付業務</header>
+        <isPublished>true</isPublished>
+        <masterLabel>申請リストビューガイダンス</masterLabel>
+        <publishedDate>2022-06-16</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2022-06-09</startDate>
+        <targetPageKey1>Application__c</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <timesToDisplay>20</timesToDisplay>
+        <title>申請レコードの作り方</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NewGarageTaxCategory</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+NOT( ISNULL( NewGarage__c )) ,
+ISBLANK(TEXT( NewGarageTaxCategory__c) 
+)
+)</errorConditionFormula>
+    <errorDisplayField>NewGarageTaxCategory__c</errorDisplayField>
+    <errorMessage>新駐車場課税区分を入力してください。</errorMessage>
+</ValidationRule>

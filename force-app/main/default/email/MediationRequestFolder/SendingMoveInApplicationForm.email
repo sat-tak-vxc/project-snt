@@ -1,0 +1,26 @@
+{!NewMatter.AgencyTraderName__c}
+{!NewMatter.AgencyStaffName__c} 様
+
+いつもお世話になっております。
+
+ご依頼のございました入居申込書をお送りいたします。
+ご査収くださいませ。
+
+＜対象＞
+借主名：{!NewMatter.AccountName__c}
+物件（駐車場）名：{!NewMatter.DecisionRealEstateName__c}　{!NewMatter.DecisionRealEstateRoom__c} 号
+新規ID：{!NewMatter.NewMatterId__c}
+
+入居者情報の詳細は弊社でもお預かりしておりません。
+お手数をおかけして申し訳ございませんが
+貴社にてご確認・ご記入いただけますでしょうか。
+
+引き続き、よろしくお願い申し上げます。
+
+日本社宅サービス株式会社
+オペレーショングループ
+TEL：{!NewMatter.ChargeTeamPhone__c}　FAX：{!NewMatter.ChargeTeamFax__c}
+e-mail：{!NewMatter.ChargeTeamEmail__c}
+■添付物確認者：
+1.添付書類に混入がないことを確認しました。
+1.送付先に間違いないことを確認しました。

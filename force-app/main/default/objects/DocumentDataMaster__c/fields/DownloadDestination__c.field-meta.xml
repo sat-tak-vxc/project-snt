@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DownloadDestination__c</fullName>
+    <externalId>false</externalId>
+    <label>ダウンロード先</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>OperationType__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>社員</fullName>
+                <default>true</default>
+                <label>社員</label>
+            </value>
+            <value>
+                <fullName>不動産</fullName>
+                <default>false</default>
+                <label>不動産</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>解約</controllingFieldValue>
+            <controllingFieldValue>新規</controllingFieldValue>
+            <valueName>社員</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>新規</controllingFieldValue>
+            <valueName>不動産</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

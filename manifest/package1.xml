@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>CaseStatus</members>
+		<members>CaseOrigin</members>
+		<members>CasePriority</members>
+		<members>CaseReason</members>
+		<members>CaseType</members>
+		<members>AccountRating</members>
+		<members>AccountType</members>
+		<members>Salutation</members>
+		<name>StandardValueSet</name>
+	</types>
+	
+	<types>
+		<members>*</members>
+		<name>DataCategoryGroup</name>
+	</types>
+	<version>56.0</version>
+</Package>

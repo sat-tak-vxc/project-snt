@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OperatorUncheckNumManual__c</fullName>
+    <externalId>false</externalId>
+    <label>OP未チェック数（手動）</label>
+    <summaryFilterItems>
+        <field>CancelCalculateCheck__c.CheckCategory__c</field>
+        <operation>notEqual</operation>
+        <value>自動</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>CancelCalculateCheck__c.OperatorCheck__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>CancelCalculateCheck__c.CancelCalculate__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

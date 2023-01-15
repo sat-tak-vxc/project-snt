@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DepositUnpaidCancelOperation</fullName>
+    <columns>NAME</columns>
+    <columns>AccountID__c</columns>
+    <columns>Account__c</columns>
+    <columns>OwnerNameKana__c</columns>
+    <columns>CalculateCounter__c</columns>
+    <columns>CancelCounterName__c</columns>
+    <columns>DepositRefundScheduledDate__c</columns>
+    <columns>DepositRefundScheduledAmount__c</columns>
+    <columns>RentBankAccountContractor__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>DecisionAcquisitionDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>RefundTotalAmount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>敷金が未返金が解約業務</label>
+</ListView>

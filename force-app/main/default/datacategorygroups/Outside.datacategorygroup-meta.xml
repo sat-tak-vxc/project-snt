@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCategoryGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <dataCategory>
+        <dataCategory>
+            <label>お知らせ(企業)</label>
+            <name>Category0</name>
+        </dataCategory>
+        <dataCategory>
+            <label>お知らせ(不動産)</label>
+            <name>Category1</name>
+        </dataCategory>
+        <dataCategory>
+            <label>FAQ</label>
+            <name>FAQ</name>
+        </dataCategory>
+        <dataCategory>
+            <label>記事</label>
+            <name>Article</name>
+        </dataCategory>
+        <label>All</label>
+        <name>All</name>
+    </dataCategory>
+    <label>社外向け</label>
+    <objectUsage>
+        <object>KnowledgeArticleVersion</object>
+    </objectUsage>
+</DataCategoryGroup>

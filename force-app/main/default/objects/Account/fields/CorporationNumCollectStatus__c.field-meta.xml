@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CorporationNumCollectStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>法人番号回収状況</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>済</fullName>
+                <default>false</default>
+                <label>済</label>
+            </value>
+            <value>
+                <fullName>未</fullName>
+                <default>false</default>
+                <label>未</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnswerStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>回答状況</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>未回答</fullName>
+                <default>true</default>
+                <label>未回答</label>
+            </value>
+            <value>
+                <fullName>回答済み</fullName>
+                <default>false</default>
+                <label>回答済み</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

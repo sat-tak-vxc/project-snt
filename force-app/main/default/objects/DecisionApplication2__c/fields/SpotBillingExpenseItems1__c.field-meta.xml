@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SpotBillingExpenseItems1__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>SPOT請求費目1</label>
+    <referenceTo>ExpenseItem__c</referenceTo>
+    <relationshipLabel>決裁申請2</relationshipLabel>
+    <relationshipName>ExpenseItems1Relation</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

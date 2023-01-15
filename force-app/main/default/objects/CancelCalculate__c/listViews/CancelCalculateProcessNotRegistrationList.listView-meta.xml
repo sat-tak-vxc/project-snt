@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelCalculateProcessNotRegistrationList</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>RealEstate__c</columns>
+    <columns>DepositRefundScheduledDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ProcessManagement__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>DepositRefundScheduledAmount__c</field>
+        <operation>greaterThan</operation>
+        <value>0</value>
+    </filters>
+    <label>解約精算工程未登録リスト</label>
+</ListView>

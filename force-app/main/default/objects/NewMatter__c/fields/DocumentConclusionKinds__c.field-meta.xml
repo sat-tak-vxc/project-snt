@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DocumentConclusionKinds__c</fullName>
+    <externalId>false</externalId>
+    <label>書類締結種類</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SNT覚書</fullName>
+                <default>false</default>
+                <label>SNT覚書</label>
+            </value>
+            <value>
+                <fullName>貸主覚書</fullName>
+                <default>false</default>
+                <label>貸主覚書</label>
+            </value>
+            <value>
+                <fullName>契約書再締結</fullName>
+                <default>false</default>
+                <label>契約書再締結</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

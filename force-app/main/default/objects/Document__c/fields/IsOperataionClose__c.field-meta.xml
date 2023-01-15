@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsOperataionClose__c</fullName>
+    <externalId>false</externalId>
+    <formula>ISPICKVAL(Seal__r.Stage__c,&quot;完了&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>業務完了</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>
