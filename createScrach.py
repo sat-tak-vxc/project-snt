@@ -51,20 +51,27 @@ try:
                 nextReslut = True
                 
 
-        COMAND_INPORT_APP1 = "sfdx force:package:install -p 04t2r000000ka7MAAQ -s AllUsers -r -u {} -b 10 -w 10".format(outputUserId)
-        results = subprocess.run(COMAND_INPORT_APP1 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout.split()
+        COMAND_DELEATE_SCRACH = " sfdx force:source:deploy  -x manifest/package1.xml -w 300 -u {}".format(outputUserId)
 
+
+        print("USER:{}=>DELEATE".format(deployUser))
+        print(subprocess.run(COMAND_DELEATE_SCRACH ,shell=True , capture_output=True, text=True).stdout)
+
+        COMAND_INPORT_APP1 = "sfdx force:package:install -p 04t2r000000ka7MAAQ -s AllUsers -r -u {} -b 10 -w 10".format(outputUserId)
+        print(subprocess.run(COMAND_INPORT_APP1 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout)
+        
         COMAND_INPORT_APP2 = "sfdx force:package:install -p 04t5h000000LxCQAA0 -s AllUsers -r -u {} -b 10 -w 10".format(outputUserId)
-        results = subprocess.run(COMAND_INPORT_APP2 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout.split()
+        print(subprocess.run(COMAND_INPORT_APP2 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout)
 
         COMAND_INPORT_APP3 = "sfdx force:package:install -p 04t10000000K8DRAA0 -s AllUsers -r -u {} -b 10 -w 10".format(outputUserId)  
-        results = subprocess.run(COMAND_INPORT_APP3 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout.split()
+        print(subprocess.run(COMAND_INPORT_APP3 ,shell=True ,capture_output=True, text=True,encoding = 'UTF-8').stdout)
 
-        dataList.append("UserName:{}\n".format(outputUserId))
-        dataList.append("Password:{}\n".format(outputPassword))
+
         print('----------------------')
 except IndexError :
     print("SYSTEM ERROR")
+    
 f.writelines(dataList)
 f.close()
+
 print(dataList)
